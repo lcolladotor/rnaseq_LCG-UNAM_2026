@@ -1,4 +1,4 @@
-## ----ellmer_demo, eval = FALSE---------------------------------------------------------------------
+## ----ellmer_demo, eval = FALSE----
 # install.packages("ellmer")
 # 
 # library("ellmer")
@@ -11,7 +11,7 @@
 # ## Salir con Q
 
 
-## ----pal_demo, eval = FALSE------------------------------------------------------------------------
+## ----pal_demo, eval = FALSE----
 # ## Instalar pal
 # install.packages("pak")
 # pak::pak("simonpcouch/pal")
@@ -38,7 +38,7 @@
 # }
 
 
-## ----lang_demo, eval = FALSE-----------------------------------------------------------------------
+## ----lang_demo, eval = FALSE----
 # ## 1. Instala el paquete de mall
 # install.packages("mall")
 # 
@@ -71,7 +71,7 @@
 # llm_use("ollama", "llama3.2", seed = 100)
 
 
-## ----install_rsthemes, eval = FALSE----------------------------------------------------------------
+## ----install_rsthemes, eval = FALSE----
 # remotes::install_github(c(
 #     "gadenbuie/rsthemes"
 # ))
@@ -79,7 +79,7 @@
 # rsthemes::install_rsthemes(include_base16 = TRUE)
 
 
-## ----r_profile, eval = FALSE-----------------------------------------------------------------------
+## ----r_profile, eval = FALSE----
 # usethis::edit_r_profile()
 # 
 # ## From https://www.garrickadenbuie.com/project/rsthemes/
@@ -105,21 +105,21 @@
 # options(repos = c(CRAN = "https://cloud.r-project.org"))
 
 
-## ----proj, eval = FALSE----------------------------------------------------------------------------
-# usethis::create_project("~/Desktop/rnaseq_2025_notas")
+## ----proj, eval = FALSE--------
+# usethis::create_project("~/Desktop/rnaseq_2026_notas")
 
 
-## ----create_setup, eval = FALSE--------------------------------------------------------------------
+## ----create_setup, eval = FALSE----
 # ## Start a setup file
 # usethis::use_r("01-notas.R")
 
 
-## ----create_01-visualizar-mtcars, eval = FALSE-----------------------------------------------------
+## ----create_01-visualizar-mtcars, eval = FALSE----
 # ## Creemos el archivo R/02-visualizar-mtcars.R
 # usethis::use_r("02-visualizar-mtcars.R")
 
 
-## ----vis_mtcars, eval = FALSE----------------------------------------------------------------------
+## ----vis_mtcars, eval = FALSE----
 # library("sessioninfo")
 # library("here")
 # library("ggplot2")
@@ -148,29 +148,29 @@
 # sessioninfo::session_info()
 
 
-## ----use_git_init, eval = FALSE--------------------------------------------------------------------
+## ----use_git_init, eval = FALSE----
 # ## Para poder conectar tu compu con GitHub
 # usethis::create_github_token() ## Abrirá una página web, escoje un nombre único
 # ## y luego da click en el botón verde al final. Después copia el token
 # ## (son 40 caracteres)
 
 
-## ----gitcreds_set, eval = FALSE--------------------------------------------------------------------
+## ----gitcreds_set, eval = FALSE----
 # gitcreds::gitcreds_set() ## Ojo, copia el token, no tu password de git!
 # ## Si no, terminaras en la situación descrita en
 # ## https://github.com/r-lib/usethis/issues/1347
 
 
-## ----edit_r_envir, eval = FALSE--------------------------------------------------------------------
+## ----edit_r_envir, eval = FALSE----
 # usethis::edit_r_environ()
 
 
-## ----use_git_cont_parte1, eval = FALSE-------------------------------------------------------------
+## ----use_git_cont_parte1, eval = FALSE----
 # ## Configura tu usuario de GitHub
 # usethis::edit_git_config()
 
 
-## ----use_git_cont_parte2, eval = FALSE-------------------------------------------------------------
+## ----use_git_cont_parte2, eval = FALSE----
 # ## Para inicializar el repositorio de Git
 # usethis::use_git()
 # 
@@ -178,30 +178,30 @@
 # usethis::use_github()
 
 
-## git clone https://github.com/lcolladotor/rnaseq_LCG-UNAM_2025.git
+## git clone https://github.com/lcolladotor/rnaseq_LCG-UNAM_2026.git
 ## 
 ## ## Si tienen su SSH key configurarda pueden usar
 ## ## Info sobre SSH keys de GitHub:
 ## ## https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
-## git clone git@github.com:lcolladotor/rnaseq_LCG-UNAM_2025.git
+## git clone git@github.com:lcolladotor/rnaseq_LCG-UNAM_2026.git
 
-## ----clone_repo, eval = FALSE----------------------------------------------------------------------
+## ----clone_repo, eval = FALSE----
 # ## Opción más nueva:
 # library("gert")
 # repo <- git_clone(
-#     "https://github.com/lcolladotor/rnaseq_LCG-UNAM_2025",
-#     "~/Desktop/rnaseq_LCG-UNAM_2025"
+#     "https://github.com/lcolladotor/rnaseq_LCG-UNAM_2026",
+#     "~/Desktop/rnaseq_LCG-UNAM_2026"
 # )
 # setwd(repo)
 # 
 # ## Otra opción:
 # git2r::clone(
-#     "https://github.com/lcolladotor/rnaseq_LCG-UNAM_2025",
-#     "~/Desktop/rnaseq_LCG-UNAM_2025"
+#     "https://github.com/lcolladotor/rnaseq_LCG-UNAM_2026",
+#     "~/Desktop/rnaseq_LCG-UNAM_2026"
 # )
 
 
-## ----eval=FALSE------------------------------------------------------------------------------------
+## ----eval=FALSE----------------
 # ## Puedes instalar Postcards con el siguiente comando:
 # install.packages("postcards")
 # 
@@ -209,18 +209,18 @@
 # remotes::install_github("seankross/postcards@main")
 
 
-## ----eval=FALSE------------------------------------------------------------------------------------
+## ----eval=FALSE----------------
 # ## Crearun nuevo proyecto
 # usethis::create_project("Su_Usuario.github.io")
 
 
-## ----eval=FALSE------------------------------------------------------------------------------------
+## ----eval=FALSE----------------
 # ## Configurar Git y GitHub
 # usethis::use_git() # Reiniciar la sesión
 # usethis::use_github()
 
 
-## ----eval=FALSE------------------------------------------------------------------------------------
+## ----eval=FALSE----------------
 # ## Elegir solo una plantilla (la que más te guste)
 # postcards::create_postcard(template = "jolla")
 # postcards::create_postcard(template = "jolla-blue")
@@ -229,7 +229,7 @@
 # postcards::create_postcard(template = "solana")
 
 
-## ----eval=FALSE------------------------------------------------------------------------------------
+## ----eval=FALSE----------------
 # ## Desplegar la página GitHub
 # rmarkdown::render("index.Rmd")
 

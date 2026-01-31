@@ -43,6 +43,7 @@ Bioconductor, the R package repository for the “analysis and comprehension of 
       - 542 en BioC 3.16 octubre 2022-abril 2023
       - 558 en BioC 3.18 octubre 2023-abril 2024
       - 566 en BioC 3.20 octubre 2024-abril 2025
+      - 588 en BioC 3.22 octubre 2025-abril 2026
 
 
 ## Estructura de un paquete de BioC
@@ -82,7 +83,7 @@ Bioconductor, the R package repository for the “analysis and comprehension of 
 
 * <http://bioconductor.org/help/events/>
 * <http://bioconductor.org/help/course-materials/>
-* BioC2025: conferencia principal anual <https://www.linkedin.com/posts/bioconductor_gbcc2025-bioconductor-galaxy-activity-7236739126190829569-QdEH>
+* BioC2026: conferencia principal anual <https://bioc2026.bioconductor.org/>
 * El que ayudo a organizar en México: eventos CDSB <https://comunidadbioinfo.github.io/#events> (inglés) y <https://comunidadbioinfo.github.io/es/#events> (español)
 
 
