@@ -33,7 +33,7 @@
 -   Tip: usen el mismo nombre de usuario en GitHub, Bluesky, Gmail, etc.
     -   How to be a Modern Scientist: <https://lcolladotor.github.io/bioc_team_ds/how-to-be-a-modern-scientist.html>
     
-## GitHub Education y el uso de AI para escribir código
+## GitHub Education y el uso de IA para escribir código
 
 * Es para obtener acceso gratiuto a GitHub Pro y GitHub Copilot. En <https://github.com/education/students> vienen los detalles y los pasos a seguir.
 * Hagan su cuenta de GitHub usando su email de la LCG-UNAM (tiene que ser un email de una institución académica). Así podrán completar la solicitud para el GitHub Education pack vía <https://education.github.com/discount_requests/application>.
@@ -96,7 +96,7 @@ foo <- function(hola) {
 }
 ```
 
-* Más sobre AI y Posit (antes RStudio)
+* Más sobre IA y Posit (antes RStudio)
   - <https://blogs.rstudio.com/ai/>
   - <https://mlverse.github.io/mall/> para hacer "sentiment analysis"
   - <https://github.com/mlverse> para paquetes de `mlverse`
@@ -297,7 +297,7 @@ usethis::use_github()
 
 Resultado ejemplo: <https://github.com/lcolladotor/rnaseq_2021_notas>. El que hice en vivo está disponible vía <https://github.com/lcolladotor/rnaseq_2026_notas_en_vivo>.
 
-Una vez que termines, agrega la liga al repositorio con tus notas del curso en el [la página del curso](https://cursos.lcg.unam.mx/mod/url/view.php?id=8559).
+Una vez que termines, agrega la liga al repositorio con tus notas del curso en el [la página del curso](https://cursos.lcg.unam.mx/mod/url/view.php?id=9877).
 
 ## Material del curso
 
