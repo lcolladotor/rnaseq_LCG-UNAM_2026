@@ -2,7 +2,6 @@
 <html lang="" xml:lang="">
 <head>
 
-  
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Intro RNA-seq LCG-UNAM 2026</title>
@@ -268,18 +267,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li><a href="http://lcolladotor.github.io/"><strong>Leonardo Collado-Torres</strong></a>: <a href="https://lcolladotor.github.io/bioc_team_ds/">team documentation website</a>, <a href="https://bsky.app/profile/lcolladotor.bsky.social">Bluesky</a></li>
 </ul>
-<p>Teach assistants:</p>
+<p>Teaching assistants:</p>
 <!--
 * Danna Ocampo Luna [Bluesky](https://bsky.app/profile/genomic-swallow.bsky.social)
 -->
 <p>Guest presenters:</p>
 <ul>
-<li><a href="https://www.gutierrezarceluslab.com/">Maria Gutierrez-Arcelus</a> <a href="https://bsky.app/profile/mariagtac.bsky.social">Bluesky</a></li>
-<li><a href="https://gabrielramirezv.github.io/">Gabriel Ramírez-Vilchis</a> <a href="https://bsky.app/profile/gabrielramirezv.bsky.social">Bluesky</a></li>
+<li><a href="https://www.gutierrezarceluslab.com/">Maria Gutierrez-Arcelus</a>, <a href="https://bsky.app/profile/mariagtac.bsky.social">Bluesky</a></li>
+<li><a href="https://gabrielramirezv.github.io/">Gabriel Ramírez-Vilchis</a>, <a href="https://bsky.app/profile/gabrielramirezv.bsky.social">Bluesky</a></li>
 </ul>
 <!--
 * [Renee García-Flores](https://reneegf.github.io/), [Bluesky](https://bsky.app/profile/freneegf.bsky.social)
-* [Daianna González Padilla](https://daianna21.github.io/), [Bluesky](https://bsky.app/profile/daiannaglez.bsky.social)
+* [Daianna González Padilla](https://daianna-glez.github.io/), [Bluesky](https://bsky.app/profile/daiannaglez.bsky.social)
 * [Melissa Mayén Quiroz](https://melii99.github.io/), [Bluesky](https://bsky.app/profile/meli-mq99.bsky.social)
 -->
 <p>Course Coordinators:</p>
@@ -344,16 +343,28 @@ by [Renee García-Flores](https://reneegf.github.io/)
 <li><a href="https://github.com/lcolladotor/rnaseq_LCG-UNAM_2026">GitHub source code</a></li>
 <li>Zoom (ask)</li>
 <li><a href="http://132.248.220.108:8787/">LCG-UNAM RStudio server</a></li>
-<li><a href="https://comunidadbioinfo.github.io/">CDSB</a>.</li>
-<li><a href="https://comunidadbioinfo.slack.com">Slack CDSB Mexico</a>, in particular the <a href="https://comunidadbioinfo.slack.com/archives/C0AC8U6UPD2"><code>intro_rnaseq_lcg_2026</code> channel</a>. You can join this Slack workspace through <a href="https://join.slack.com/t/comunidadbioinfo/shared_invite/zt-8lsvpm84-Fne1W0hadk6cpjgJS17Tnw">this link</a>.</li>
+<li><a href="https://comunidadbioinfo.github.io/">CDSB</a></li>
+<li><a href="https://comunidadbioinfo.slack.com">Slack CDSB Mexico</a>, in particular the <a href="https://comunidadbioinfo.slack.com/archives/C0AC8U6UPD2"><code>intro_rnaseq_lcg_2026</code> channel</a>.
+<ul>
+<li>You can join this Slack workspace through <a href="https://join.slack.com/t/comunidadbioinfo/shared_invite/zt-8lsvpm84-Fne1W0hadk6cpjgJS17Tnw">this link</a>.</li>
+</ul></li>
 <li><a href="https://community-bioc.zulipchat.com/">Bioconductor Zulip</a> community</li>
 <li><a href="https://github.com/LieberInstitute/template_project">LieberInstitute/template_project</a></li>
-<li>Example real project by <a href="https://daianna21.github.io/">Daianna González Padilla</a>: <a href="https://github.com/LieberInstitute/smoking-nicotine-mouse">LieberInstitute/smoking-nicotine-mouse</a></li>
+<li>Example real project by <a href="https://daianna-glez.github.io/">Daianna González Padilla</a>: <a href="https://github.com/LieberInstitute/smoking-nicotine-mouse">LieberInstitute/smoking-nicotine-mouse</a></li>
 </ul>
 </div>
 <div id="course-prerequisites" class="section level2 unnumbered hasAnchor">
 <h2>Course Prerequisites<a href="index.html#course-prerequisites" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Install R 4.5.x from <a href="https://cran.r-project.org/">CRAN</a> then install the following R packages:</p>
+<ul>
+<li>Install R 4.5.x from <a href="https://cran.r-project.org/">CRAN</a>.</li>
+<li>Install <a href="https://positron.posit.co/download.html">Positron</a> which will be our Interactive Development Environment (IDE) of choice for the course.
+<ul>
+<li>Alternatively, you could install <a href="https://rstudio.com/products/rstudio/download/#download">RStudio IDE</a> version RStudio 2026.01.0 or newer.</li>
+</ul></li>
+<li>In either case, you will also need to install <a href="https://posit-dev.github.io/air/">Air</a> for automatic code formatting.</li>
+<li>You will also have to requesst access to the <a href="https://github.com/education">GitHub Education</a> pack in order to use GitHub Copilot Pro 🤖.</li>
+<li>Finally install the following R packages:</li>
+</ul>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="index.html#cb1-1" tabindex="-1"></a><span class="do">## For installing Bioconductor packages</span></span>
 <span id="cb1-2"><a href="index.html#cb1-2" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">requireNamespace</span>(<span class="st">&quot;BiocManager&quot;</span>, <span class="at">quietly =</span> <span class="cn">TRUE</span>)) {</span>
 <span id="cb1-3"><a href="index.html#cb1-3" tabindex="-1"></a>    <span class="fu">install.packages</span>(<span class="st">&quot;BiocManager&quot;</span>)</span>
@@ -382,12 +393,10 @@ by [Renee García-Flores](https://reneegf.github.io/)
 <span id="cb1-26"><a href="index.html#cb1-26" tabindex="-1"></a>        <span class="st">&quot;spatialLIBD&quot;</span> <span class="do">## Advanced</span></span>
 <span id="cb1-27"><a href="index.html#cb1-27" tabindex="-1"></a>    )</span>
 <span id="cb1-28"><a href="index.html#cb1-28" tabindex="-1"></a>)</span></code></pre></div>
-<p>You will also need to install <a href="https://positron.posit.co/download.html">Positron</a>.</p>
-<p>Alternatively, you could install <a href="https://rstudio.com/products/rstudio/download/#download">RStudio</a> version RStudio 2026.01.0 or newer.</p>
-<p>In either case, you will also need to install <a href="https://posit-dev.github.io/air/">Air</a> for automatic code formatting and get access to the <a href="https://github.com/education">GitHub Education</a> pack.</p>
 <div id="getting-set-up" class="section level3 unnumbered hasAnchor">
 <h3>Getting set up<a href="index.html#getting-set-up" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>You must install <a href="https://cran.r-project.org">R</a> and <a href="https://posit.co/products/open-source/rstudio/?sid=1">RStudio IDE</a> or <a href="https://positron.posit.co/download.html">Positron</a> (available from <a href="https://posit.co/">Posit</a>) on your computing environment in order to complete this course.</p>
+<p>Here are more step by step instructions for the course prerequisites.</p>
+<p>You must install <a href="https://cran.r-project.org">R</a> and <a href="https://positron.posit.co/download.html">Positron</a> (available from <a href="https://posit.co/">Posit</a>) on your computing environment. As an alternative to Positron, you can install <a href="https://posit.co/products/open-source/rstudio/?sid=1">RStudio IDE</a>.</p>
 <p>These are three <strong>different</strong> applications that must be installed separately before they can be used together:</p>
 <ul>
 <li><p><code>R</code> is the core underlying programming language and computing engine that we will be learning in this course</p></li>
@@ -398,7 +407,7 @@ by [Renee García-Flores](https://reneegf.github.io/)
 <p>Throughout the course, we will make use of numerous R add-on packages that must be installed over the Internet. Packages can be installed using the <code>install.packages()</code> function in R. For example, to install the <code>tidyverse</code> package, you can run</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="index.html#cb2-1" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;tidyverse&quot;</span>)</span></code></pre></div>
 <p>in the R console.</p>
-<p>We will also be encourage you to use <a href="https://git-scm.com/">Git</a>, following the <a href="https://happygitwithr.com/"><em>Happy Git and GitHub for the useR</em></a> book, to version control your code. Through the <a href="https://github.com/education">GitHub Education</a> pack we will get free access to <a href="https://github.com/features/copilot">GittHub Copilot Pro</a> to help us write code: think about it as an enhanced auto-complete. Finally, we’ll use <a href="https://posit-dev.github.io/air/">Air</a> for automatically formatting our R code.</p>
+<p>We will also use <a href="https://git-scm.com/">Git</a> to version control your code, which you can install following the <a href="https://happygitwithr.com/"><em>Happy Git and GitHub for the useR</em></a> book. Through the <a href="https://github.com/education">GitHub Education</a> pack we will get free access to <a href="https://github.com/features/copilot">GittHub Copilot Pro</a> to help us write code: think about it as an enhanced auto-complete. Finally, we’ll use <a href="https://posit-dev.github.io/air/">Air</a> for automatically formatting our R code.</p>
 <div id="how-to-download-r-for-windows" class="section level4 unnumbered hasAnchor">
 <h4>How to Download R for Windows<a href="index.html#how-to-download-r-for-windows" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Go to <a href="https://cran.r-project.org" class="uri">https://cran.r-project.org</a> and</p>
@@ -407,6 +416,11 @@ by [Renee García-Flores](https://reneegf.github.io/)
 <li><p>Click on “base”</p></li>
 <li><p>Click on “Download R 4.5.2 for Windows”</p></li>
 </ol>
+<div class="float">
+<img src="https://lcolladotor.github.io/jhustatcomputing/videos/downloadRWindows.gif" style="width:80.0%" alt="Video Demo for Downloading R for Windows" />
+<div class="figcaption">Video Demo for Downloading R for Windows</div>
+</div>
+<p><em>The version in the video is not the latest version of R. Please download the latest version.</em></p>
 </div>
 <div id="how-to-download-r-for-the-mac" class="section level4 unnumbered hasAnchor">
 <h4>How to Download R for the Mac<a href="index.html#how-to-download-r-for-the-mac" class="anchor-section" aria-label="Anchor link to header"></a></h4>
@@ -415,6 +429,11 @@ by [Renee García-Flores](https://reneegf.github.io/)
 <li><p>Click the link to “Download R for (Mac) OS X”.</p></li>
 <li><p>Click on “R-4.5.2-arm64.pkg” (for Apple Silicon Macs)</p></li>
 </ol>
+<div class="float">
+<img src="https://lcolladotor.github.io/jhustatcomputing/videos/downloadRMac.gif" style="width:80.0%" alt="Video Demo for Downloading R for the Mac" />
+<div class="figcaption">Video Demo for Downloading R for the Mac</div>
+</div>
+<p><em>The version in the video is not the latest version of R. Please download the latest version.</em></p>
 </div>
 <div id="how-to-download-rstudio-ide" class="section level4 unnumbered hasAnchor">
 <h4>How to Download <code>RStudio IDE</code><a href="index.html#how-to-download-rstudio-ide" class="anchor-section" aria-label="Anchor link to header"></a></h4>
@@ -426,6 +445,11 @@ by [Renee García-Flores](https://reneegf.github.io/)
 <li><p>Click the button under “Download RStudio” which will take you to <a href="https://posit.co/download/rstudio-desktop/" class="uri">https://posit.co/download/rstudio-desktop/</a></p></li>
 <li><p>Under the section “All Installers and Tarballs” choose the file that is appropriate for your operating system.</p></li>
 </ol>
+<div class="float">
+<img src="https://lcolladotor.github.io/jhustatcomputing/videos/downloadRStudio.gif" style="width:80.0%" alt="Video Demo for Downloading RStudio" />
+<div class="figcaption">Video Demo for Downloading RStudio</div>
+</div>
+<p><em>NOTE: The video shows how to download RStudio for the Mac but you should download RStudio for whatever computing setup you have.</em></p>
 </div>
 <div id="how-to-download-positron" class="section level4 unnumbered hasAnchor">
 <h4>How to Download Positron<a href="index.html#how-to-download-positron" class="anchor-section" aria-label="Anchor link to header"></a></h4>
@@ -459,7 +483,7 @@ by [Renee García-Flores](https://reneegf.github.io/)
 <li>Sign in to your GitHub account if you haven’t logged in</li>
 <li>Click on “Start Application”</li>
 <li>There will be a few options to verify that you are a student. One of them is by having a photo of your student ID with dates showing that your student ID is still valid. I’ve used a screenshot of my Faculty website at <a href="https://publichealth.jhu.edu/faculty/4647/leonardo-collado-torres" class="uri">https://publichealth.jhu.edu/faculty/4647/leonardo-collado-torres</a> when validating my information.</li>
-<li>Wait a few days for GitHub to process your application.</li>
+<li>Wait a few <strong>days</strong> for GitHub to process your application.</li>
 <li>Once your application has been approved, if you are using <code>RStudio IDE</code> follow the instructions at <a href="https://docs.posit.co/ide/user/ide/guide/tools/copilot.html" class="uri">https://docs.posit.co/ide/user/ide/guide/tools/copilot.html</a> to enable GitHub Copilot in RStudio IDE. I have the “Index project files with GitHub Copilot” checkbox enabled on my preferences.</li>
 <li>If you are using <code>Positron</code>, follow the instructions at <a href="https://positron.posit.co/assistant" class="uri">https://positron.posit.co/assistant</a> to enable “Positron assistant”. Then under the “Positron Assistant” chat, click on “Add Anthropic as a Chat Provider”, then select “GitHub Copilot” and click “Sign in”.</li>
 </ol>
@@ -772,8 +796,8 @@ by [Renee García-Flores](https://reneegf.github.io/)
 ## ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────</code></pre>
 <div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="index.html#cb7-1" tabindex="-1"></a><span class="fu">proc.time</span>()</span></code></pre></div>
 <pre><code>##    user  system elapsed 
-##  12.039   0.971  12.650</code></pre>
-<p>This book was last updated at 2026-01-31 09:16:55.545732.</p>
+##  11.139   0.951  11.725</code></pre>
+<p>This book was last updated at 2026-01-31 10:22:03.410773.</p>
 </div>
 <div id="license" class="section level2 unnumbered hasAnchor">
 <h2>License<a href="index.html#license" class="anchor-section" aria-label="Anchor link to header"></a></h2>
