@@ -1,4 +1,4 @@
-# Introducción a R y RStudio
+# Introducción a R y Positron
 
 ## R
 
@@ -37,11 +37,12 @@
 
 * Es para obtener acceso gratiuto a GitHub Pro y GitHub Copilot. En <https://github.com/education/students> vienen los detalles y los pasos a seguir.
 * Hagan su cuenta de GitHub usando su email de la LCG-UNAM (tiene que ser un email de una institución académica). Así podrán completar la solicitud para el GitHub Education pack vía <https://education.github.com/discount_requests/application>.
-* Una vez que GitHub se los autorice podrán configurar su RStudio para usar GitHub Copilot siguiendo las instrucciones de <https://docs.posit.co/ide/user/ide/guide/tools/copilot.html>. Estos son los settings que uso en mi RStudio:
+* Una vez que GitHub se los autorice podrán configurar su Positron para usar GitHub Copilot siguiendo las instrucciones de <https://positron.posit.co/assistant-getting-started.html>. 
+  - Para RStudio sigan los siguientes pasos: <https://docs.posit.co/ide/user/ide/guide/tools/copilot.html>. Estos son los settings que uso en mi RStudio:
 
 <img src="images/GitHub_Copilot_RStudio_config.png" width="500px" />
 
-* Una vez que tengan GitHub Copilot configurado en RStudio, podrán usar <https://cran.r-project.org/package=chattr> para usar GitHub Copilot vía `chattr::chattr_app()`.
+* Una vez que tengan GitHub Copilot configurado en Positron o RStudio, podrán usar <https://cran.r-project.org/package=chattr> para usar GitHub Copilot vía `chattr::chattr_app()`.
   - <https://mlverse.github.io/chattr/index.html>
   - <https://mlverse.github.io/chattr/articles/copilot-chat.html>
   - Prompts de ejemplo:
@@ -67,30 +68,29 @@ live_console(chat)
 ## Salir con Q
 ```
 
-* <https://simonpcouch.github.io/pal/> puede ayudar con unas tareas específicas de programación que son repetitivas pero a la vez más complicadas de lograr vía prompts
+* <https://simonpcouch.github.io/chores/> puede ayudar con unas tareas específicas de programación que son repetitivas pero a la vez más complicadas de lograr vía prompts
 
-```{r pal_demo, eval = FALSE}
-## Instalar pal
-install.packages("pak")
-pak::pak("simonpcouch/pal")
+```{r chores_demo, eval = FALSE}
+## Instalar chores
+install.packages("chores")
+pak::pak("simonpcouch/chores")
 
-## Probar pal
-library("pal")
+## Probar chores
+library("chores")
 options(
-    .pal_fn = "chat_github"
+    chores.chat = ellmer::chat_github()
 )
-pal_roxygen <- .init_pal("roxygen")
+helper_roxygen <- .init_helper("roxygen")
 cat(
-    pal_roxygen$chat("foo <- function(hola) {
+    helper_roxygen$chat("foo <- function(hola) {
         print(hola)
     }")
 )
 
-## En teoria funciona, pero no me ha funcionado a mi
-## como lo reporté en https://github.com/simonpcouch/pal/issues/79
+## Ejemplo 2
 rlang::abort("`save_pred` can only be used if the initial results saved predictions.")
 
-## Igual con este ejemplo
+## Ejemplo 3
 foo <- function(hola) {
     print(hola)
 }
@@ -135,6 +135,11 @@ library("lang")
 llm_use("ollama", "llama3.2", seed = 100)
 ```
 
+## Positron
+
+- Positron es gratis y lo podemos obtener descargar desde <https://positron.posit.co/download.html>.
+- Es una versión más moderna que RStudio y más compatible con Python, no solo con R.
+- Está basado en VS Code, que es otro IDE.
 
 ## RStudio
 
@@ -181,6 +186,8 @@ options(repos = c(CRAN = "https://cloud.r-project.org"))
     -   <https://posit.co/wp-content/uploads/2022/10/rstudio-ide-1.pdf>
 -   RStudio projects: usalos para organizar tu código
     -   <https://github.com/ComunidadBioInfo/cdsb2020/blob/master/presentaciones_flujos-de-trabajo/Trabajando-con-proyectos.pdf>
+
+## Repositorio de notas para el curso
 
 ```{r proj, eval = FALSE}
 usethis::create_project("~/Desktop/rnaseq_2026_notas")
