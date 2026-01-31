@@ -128,7 +128,7 @@ You will also need to install [RStudio](https://rstudio.com/products/rstudio/dow
   - (optional, strongly encouraged for your own career) Community building: CDSB Slack (introduce yourself), Bluesky, GitHub, etc. These are tracked by the TA: please let the TA know of your participations.
     - GitHub issues on the course repository
     - CDSB Slack [#bienvenida](https://comunidadbioinfo.slack.com/archives/CAB6CHXUY) channel
-    - Bioconductor Zulip [#introductions](https://community-bioc.zulipchat.com/#narrow/channel/507510-introductions/topic//with/567532456) channel
+    - Bioconductor Zulip [#introductions](https://community-bioc.zulipchat.com/#narrow/channel/507510-introductions) channel
     - Bluesky posts related to the course
   - Grading:
     - 0%: no participation
