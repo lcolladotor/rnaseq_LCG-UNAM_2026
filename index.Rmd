@@ -161,7 +161,7 @@ in the R console.
 
 We will also use [Git](https://git-scm.com/) to version control your code, which you can install following the [*Happy Git and GitHub for the useR*](https://happygitwithr.com/) book. Through the [GitHub Education](https://github.com/education) pack we will get free access to [GittHub Copilot Pro](https://github.com/features/copilot) to help us write code: think about it as an enhanced auto-complete. Finally, we'll use [Air](https://posit-dev.github.io/air/) for automatically formatting our R code.
 
-#### How to Download R for Windows {-}
+### How to Download R for Windows {-}
 
 Go to <https://cran.r-project.org> and
 
@@ -175,7 +175,7 @@ Go to <https://cran.r-project.org> and
 
 _The version in the video is not the latest version of R. Please download the latest version._
 
-#### How to Download R for the Mac {-}
+### How to Download R for the Mac {-}
 
 Go to <https://cran.r-project.org> and
 
@@ -187,7 +187,7 @@ Go to <https://cran.r-project.org> and
 
 _The version in the video is not the latest version of R. Please download the latest version._
 
-#### How to Download `RStudio IDE` {-}
+### How to Download `RStudio IDE` {-}
 
 Go to <https://posit.co/> (formerly [https://rstudio.com]()) and
 
@@ -205,7 +205,7 @@ Go to <https://posit.co/> (formerly [https://rstudio.com]()) and
 
 _NOTE: The video shows how to download RStudio for the Mac but you should download RStudio for whatever computing setup you have._
 
-#### How to Download Positron {-}
+### How to Download Positron {-}
 
 Go to <https://posit.co/> and
 
@@ -221,11 +221,11 @@ Go to <https://posit.co/> and
 
 6.  On the table with all the download options, choose the file that is appropriate for your operating system.
 
-#### How to Download Git {-}
+### How to Download Git {-}
 
 Install `Git` on your computer following the detailed instructions at <https://happygitwithr.com/install-git>, which will depend on your operating system.
 
-#### Create your GitHub account {-}
+### Create your GitHub account {-}
 
 Create a personal GitHub account following the instructions at <https://docs.github.com/en/get-started/signing-up-for-github/signing-up-for-a-new-github-account>.
 
@@ -235,7 +235,7 @@ Following [Jeff Leek](https://bsky.app/profile/jtleek.bsky.social)'s advice on [
 
 If you are using `Positron`, under the "Accounts" options (bottom left corner), click on "Sign in with GitHub \[...\]", provide the 8 digit code, and authorize "posit-dev".
 
-#### How to Apply for GitHub Education and configure GitHub Copilot {-}
+### How to Apply for GitHub Education and configure GitHub Copilot {-}
 
 Go to <https://github.com/education> and
 
@@ -247,7 +247,7 @@ Go to <https://github.com/education> and
 6.  Once your application has been approved, if you are using `RStudio IDE` follow the instructions at <https://docs.posit.co/ide/user/ide/guide/tools/copilot.html> to enable GitHub Copilot in RStudio IDE. I have the "Index project files with GitHub Copilot" checkbox enabled on my preferences.
 7.  If you are using `Positron`, follow the instructions at <https://positron.posit.co/assistant> to enable "Positron assistant". Then under the "Positron Assistant" chat, click on "Add Anthropic as a Chat Provider", then select "GitHub Copilot" and click "Sign in".
 
-#### How to get Air (auto-code formatter) {-}
+### How to get Air (auto-code formatter) {-}
 
 Go to <https://posit-dev.github.io/air/> and
 
