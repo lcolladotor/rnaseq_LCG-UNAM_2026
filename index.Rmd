@@ -31,6 +31,9 @@ Teach assistants:
 
 Guest presenters:
 
+* [Maria Gutierrez-Arcelus](https://www.gutierrezarceluslab.com/) [Bluesky](https://bsky.app/profile/mariagtac.bsky.social)
+* [Gabriel Ramírez-Vilchis](https://gabrielramirezv.github.io/) [Bluesky](https://bsky.app/profile/gabrielramirezv.bsky.social)
+
 <!--
 * [Renee García-Flores](https://reneegf.github.io/), [Bluesky](https://bsky.app/profile/freneegf.bsky.social)
 * [Daianna González Padilla](https://daianna21.github.io/), [Bluesky](https://bsky.app/profile/daiannaglez.bsky.social)
@@ -55,20 +58,27 @@ For reporting any violations of the code of conduct, report them to the Instruct
 _Local times in Cuernavaca, Mexico_
 
 * Tuesday February 10:
-  - 9-11 am: introduction to R, RStudio, `r BiocStyle::CRANpkg("usethis")` and `r BiocStyle::CRANpkg("here")`
-  - 12-2 pm: introduction to GitHub Copilot with RStudio, RStudio projects, and connecting RStudio projects to GitHub
+  - 9-11 am: introduction to R, Positron, `r BiocStyle::CRANpkg("usethis")` and `r BiocStyle::CRANpkg("here")`
+  - 12-2 pm: introduction to GitHub Copilot with Positron, and connecting Positron to GitHub
 * Wednesday February 11:
   - 9-11 am: introduction to Bioconductor
   - 12-2 pm: expression data R/Bioconductor objects and visualization: `r BiocStyle::Biocpkg("SummarizedExperiment")` and `r BiocStyle::Biocpkg("iSEE")`
 * Thursday February 12:
   - 9-11 am: downloading RNA-seq data using `r BiocStyle::Biocpkg("recount3")`
-  - 12-2 pm: making your own website with `r BiocStyle::CRANpkg("postcards")` by [Renee García-Flores](https://reneegf.github.io/)
+  - 12-2 pm: making your own website with `r BiocStyle::CRANpkg("postcards")` 
+  
+<!--
+by [Renee García-Flores](https://reneegf.github.io/)
+-->
+
 * Friday February 13:
   - 9-11 am: exploring statistical models with `r BiocStyle::Biocpkg("ExploreModelMatrix")`
-  - 12-2 pm: differential expression analysis with `r BiocStyle::Biocpkg("limma")`
+  - 12-1pm: current examples of RNA-seq data analysis
+    - Guest presentation by [Maria Gutierrez-Arcelus](https://www.gutierrezarceluslab.com/)
+    - Guest presentation by [Gabriel Ramírez-Vilchis](https://gabrielramirezv.github.io/)
+  - 1-2 pm: differential expression analysis with `r BiocStyle::Biocpkg("limma")`
     - + review
     - + _R/Bioconductor-powered Team Data Science_ overview + open discussion (career paths, networking, etc)
-    - [2026 LIBD summer internship program](https://www.libd.org/summer-internship): application closes on February 20th.
   
 ## External links {-}
 
@@ -118,7 +128,141 @@ BiocManager::install(
 )
 ```
 
-You will also need to install [RStudio](https://rstudio.com/products/rstudio/download/#download) version RStudio 2026.01.0 or newer.
+You will also need to install [Positron](https://positron.posit.co/download.html).
+
+Alternatively, you could install [RStudio](https://rstudio.com/products/rstudio/download/#download) version RStudio 2026.01.0 or newer.
+
+In either case, you will also need to install [Air](https://posit-dev.github.io/air/) for automatic code formatting and get access to the [GitHub Education](https://github.com/education) pack.
+
+### Getting set up {-}
+
+You must install [R](https://cran.r-project.org) and [RStudio IDE](https://posit.co/products/open-source/rstudio/?sid=1) or [Positron](https://positron.posit.co/download.html) (available from [Posit](https://posit.co/)) on your computing environment in order to complete this course.
+
+These are three **different** applications that must be installed separately before they can be used together:
+
+-   `R` is the core underlying programming language and computing engine that we will be learning in this course
+
+-   `RStudio IDE` is an interface into R that makes many aspects of using and programming R simpler
+
+-   `Positron` is a new interface for working with R developed by [Posit](https://posit.co/) (formerly RStudio). All new features are being implemented in `Positron`, but as it was just recently released, it might have some bugs. If you are choosing between `RStudio IDE` and `Positron`, check <https://positron.posit.co/faqs.html#is-rstudio-going-away>.
+
+`R`, `RStudio IDE`, and `Positron` are available for Windows, macOS, and most flavors of Unix and Linux. Please download the version that is suitable for your computing setup.
+
+Throughout the course, we will make use of numerous R add-on packages that must be installed over the Internet. Packages can be installed using the `install.packages()` function in R. For example, to install the `tidyverse` package, you can run
+
+```{r}
+#| eval: false
+install.packages("tidyverse")
+```
+
+in the R console.
+
+We will also be encourage you to use [Git](https://git-scm.com/), following the [*Happy Git and GitHub for the useR*](https://happygitwithr.com/) book, to version control your code. Through the [GitHub Education](https://github.com/education) pack we will get free access to [GittHub Copilot Pro](https://github.com/features/copilot) to help us write code: think about it as an enhanced auto-complete. Finally, we'll use [Air](https://posit-dev.github.io/air/) for automatically formatting our R code.
+
+#### How to Download R for Windows {-}
+
+Go to <https://cran.r-project.org> and
+
+1.  Click the link to "Download R for Windows"
+
+2.  Click on "base"
+
+3.  Click on "Download R 4.5.2 for Windows"
+
+#### How to Download R for the Mac {-}
+
+Go to <https://cran.r-project.org> and
+
+1.  Click the link to "Download R for (Mac) OS X".
+
+2.  Click on "R-4.5.2-arm64.pkg" (for Apple Silicon Macs)
+
+#### How to Download `RStudio IDE` {-}
+
+Go to <https://posit.co/> (formerly [https://rstudio.com]()) and
+
+1.  Click on "Free & Open Source" in the top menu
+
+2.  Click on "RStudio IDE" in the drop down menu
+
+3.  Click the button that says "DOWNLOAD RSTUDIO DESKTOP"
+
+4.  Click the button under "Download RStudio" which will take you to <https://posit.co/download/rstudio-desktop/>
+
+5.  Under the section "All Installers and Tarballs" choose the file that is appropriate for your operating system.
+
+#### How to Download Positron {-}
+
+Go to <https://posit.co/> and
+
+1.  Click on "Free & Open Source" in the top menu
+
+2.  Click on "Positron" in the drop down menu
+
+3.  Click on "Download Positron" which will take you to <https://positron.posit.co/download.html>
+
+4.  Read the license agreement.
+
+5.  Accept the license agreement.
+
+6.  On the table with all the download options, choose the file that is appropriate for your operating system.
+
+#### How to Download Git {-}
+
+Install `Git` on your computer following the detailed instructions at <https://happygitwithr.com/install-git>, which will depend on your operating system.
+
+#### Create your GitHub account {-}
+
+Create a personal GitHub account following the instructions at <https://docs.github.com/en/get-started/signing-up-for-github/signing-up-for-a-new-github-account>.
+
+Following [Jeff Leek](https://bsky.app/profile/jtleek.bsky.social)'s advice on [**How to be a modern scientist**](https://leanpub.com/modernscientist) that was part of my team's bootcamps at <https://lcolladotor.github.io/bioc_team_ds/how-to-be-a-modern-scientist.html>, try to choose a username that will be the same one you use on your email and other work-related social media platforms such as Bluesky, LinkedIn, etc.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/93hA-iPWsbs?si=o-Ekbw7iOSoa5j6e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+If you are using `Positron`, under the "Accounts" options (bottom left corner), click on "Sign in with GitHub \[...\]", provide the 8 digit code, and authorize "posit-dev".
+
+#### How to Apply for GitHub Education and configure GitHub Copilot {-}
+
+Go to <https://github.com/education> and
+
+1.  Click on "Join GitHub education" (likely <https://github.com/settings/education/benefits?locale=en-US>)
+2.  Sign in to your GitHub account if you haven't logged in
+3.  Click on "Start Application"
+4.  There will be a few options to verify that you are a student. One of them is by having a photo of your student ID with dates showing that your student ID is still valid. I've used a screenshot of my Faculty website at <https://publichealth.jhu.edu/faculty/4647/leonardo-collado-torres> when validating my information.
+5.  Wait a few days for GitHub to process your application.
+6.  Once your application has been approved, if you are using `RStudio IDE` follow the instructions at <https://docs.posit.co/ide/user/ide/guide/tools/copilot.html> to enable GitHub Copilot in RStudio IDE. I have the "Index project files with GitHub Copilot" checkbox enabled on my preferences.
+7.  If you are using `Positron`, follow the instructions at <https://positron.posit.co/assistant> to enable "Positron assistant". Then under the "Positron Assistant" chat, click on "Add Anthropic as a Chat Provider", then select "GitHub Copilot" and click "Sign in".
+
+#### How to get Air (auto-code formatter) {-}
+
+Go to <https://posit-dev.github.io/air/> and
+
+1.  Click on "RStudio" if you are using `RStudio IDE`. That will take you to <https://posit-dev.github.io/air/editor-rstudio.html> where you will find the detailed installation instructions.
+
+    -   Note that I recommend enabling the `Tools -> Global Options -> Code -> Saving` and check `Reformat documents on save` option. Particularly if you are working on your own code.
+
+2.  Click on "VS Code and Positron" if you are using `Positron`. That will take you to <https://posit-dev.github.io/air/editor-vscode.html> where some options and configuration steps are described. Note however, that `Air` is already available from `Positron`. You will need to open your `settings.json` file from the Command Palette (`Shift + Cmd + P` on Mac/Linux, `Shift + Ctrl + P` on Windows):
+
+    -   Run `Preferences: Open Workspace Settings (JSON)` to modify workspace specific settings (recommended).
+
+    -   Run `Preferences: Open User Settings (JSON)` to modify global user settings (preferred option if you are not working with code from others). Then edit your `settings.json` with the relevant lines about R code formatting and `Air` as shown below:
+
+        ```{json}
+        {
+            "files.associations": {
+                "renv.lock": "json"
+            },
+            "positron.assistant.gitIntegration.enable": true,
+            "positron.assistant.showTokenUsage.enable": true,
+            "positron.assistant.toolDetails.enable": true,
+            "[r]": {
+                "editor.formatOnSave": true,
+                "editor.defaultFormatter": "Posit.air-vscode"
+            }
+        }
+        ```
+
+    1.  You can also configure a few options at [positron://settings/air.dependencyLogLevels](positron://settings/air.dependencyLogLevels) and related settings.
 
 ## Course Evaluation {-}
 
