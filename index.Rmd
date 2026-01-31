@@ -23,7 +23,7 @@ Instructor:
 
 * [**Leonardo Collado-Torres**](http://lcolladotor.github.io/): [team documentation website](https://lcolladotor.github.io/bioc_team_ds/), [Bluesky](https://bsky.app/profile/lcolladotor.bsky.social)
 
-Teach assistants:
+Teaching assistants:
 
 <!--
 * Danna Ocampo Luna [Bluesky](https://bsky.app/profile/genomic-swallow.bsky.social)
@@ -31,12 +31,12 @@ Teach assistants:
 
 Guest presenters:
 
-* [Maria Gutierrez-Arcelus](https://www.gutierrezarceluslab.com/) [Bluesky](https://bsky.app/profile/mariagtac.bsky.social)
-* [Gabriel Ramírez-Vilchis](https://gabrielramirezv.github.io/) [Bluesky](https://bsky.app/profile/gabrielramirezv.bsky.social)
+* [Maria Gutierrez-Arcelus](https://www.gutierrezarceluslab.com/), [Bluesky](https://bsky.app/profile/mariagtac.bsky.social)
+* [Gabriel Ramírez-Vilchis](https://gabrielramirezv.github.io/), [Bluesky](https://bsky.app/profile/gabrielramirezv.bsky.social)
 
 <!--
 * [Renee García-Flores](https://reneegf.github.io/), [Bluesky](https://bsky.app/profile/freneegf.bsky.social)
-* [Daianna González Padilla](https://daianna21.github.io/), [Bluesky](https://bsky.app/profile/daiannaglez.bsky.social)
+* [Daianna González Padilla](https://daianna-glez.github.io/), [Bluesky](https://bsky.app/profile/daiannaglez.bsky.social)
 * [Melissa Mayén Quiroz](https://melii99.github.io/), [Bluesky](https://bsky.app/profile/meli-mq99.bsky.social)
 -->
 
@@ -86,16 +86,22 @@ by [Renee García-Flores](https://reneegf.github.io/)
 * [GitHub source code](https://github.com/lcolladotor/rnaseq_LCG-UNAM_2026)
 * Zoom (ask)
 * [LCG-UNAM RStudio server](http://132.248.220.108:8787/)
-* [CDSB](https://comunidadbioinfo.github.io/). 
-* [Slack CDSB Mexico](https://comunidadbioinfo.slack.com), in particular the [`intro_rnaseq_lcg_2026` channel](https://comunidadbioinfo.slack.com/archives/C0AC8U6UPD2). You can join this Slack workspace through [this link](https://join.slack.com/t/comunidadbioinfo/shared_invite/zt-8lsvpm84-Fne1W0hadk6cpjgJS17Tnw).
+* [CDSB](https://comunidadbioinfo.github.io/) 
+* [Slack CDSB Mexico](https://comunidadbioinfo.slack.com), in particular the [`intro_rnaseq_lcg_2026` channel](https://comunidadbioinfo.slack.com/archives/C0AC8U6UPD2).
+  - You can join this Slack workspace through [this link](https://join.slack.com/t/comunidadbioinfo/shared_invite/zt-8lsvpm84-Fne1W0hadk6cpjgJS17Tnw).
 * [Bioconductor Zulip](https://community-bioc.zulipchat.com/) community
 * [LieberInstitute/template_project](https://github.com/LieberInstitute/template_project)
-* Example real project by [Daianna González Padilla](https://daianna21.github.io/): [LieberInstitute/smoking-nicotine-mouse](https://github.com/LieberInstitute/smoking-nicotine-mouse)
+* Example real project by [Daianna González Padilla](https://daianna-glez.github.io/): [LieberInstitute/smoking-nicotine-mouse](https://github.com/LieberInstitute/smoking-nicotine-mouse)
   
 
 ## Course Prerequisites {-}
 
-Install R 4.5.x from [CRAN](https://cran.r-project.org/) then install the following R packages:
+* Install R 4.5.x from [CRAN](https://cran.r-project.org/).
+* Install [Positron](https://positron.posit.co/download.html) which will be our Interactive Development Environment (IDE) of choice for the course.
+  - Alternatively, you could install [RStudio IDE](https://rstudio.com/products/rstudio/download/#download) version RStudio 2026.01.0 or newer.
+* In either case, you will also need to install [Air](https://posit-dev.github.io/air/) for automatic code formatting.
+* You will also have to requesst access to the [GitHub Education](https://github.com/education) pack in order to use GitHub Copilot Pro 🤖.
+* Finally install the following R packages:
 
 ```{r install, eval = FALSE}
 ## For installing Bioconductor packages
@@ -128,15 +134,11 @@ BiocManager::install(
 )
 ```
 
-You will also need to install [Positron](https://positron.posit.co/download.html).
-
-Alternatively, you could install [RStudio](https://rstudio.com/products/rstudio/download/#download) version RStudio 2026.01.0 or newer.
-
-In either case, you will also need to install [Air](https://posit-dev.github.io/air/) for automatic code formatting and get access to the [GitHub Education](https://github.com/education) pack.
-
 ### Getting set up {-}
 
-You must install [R](https://cran.r-project.org) and [RStudio IDE](https://posit.co/products/open-source/rstudio/?sid=1) or [Positron](https://positron.posit.co/download.html) (available from [Posit](https://posit.co/)) on your computing environment in order to complete this course.
+Here are more step by step instructions for the course prerequisites.
+
+You must install [R](https://cran.r-project.org) and [Positron](https://positron.posit.co/download.html) (available from [Posit](https://posit.co/)) on your computing environment. As an alternative to Positron, you can install [RStudio IDE](https://posit.co/products/open-source/rstudio/?sid=1).
 
 These are three **different** applications that must be installed separately before they can be used together:
 
@@ -157,7 +159,7 @@ install.packages("tidyverse")
 
 in the R console.
 
-We will also be encourage you to use [Git](https://git-scm.com/), following the [*Happy Git and GitHub for the useR*](https://happygitwithr.com/) book, to version control your code. Through the [GitHub Education](https://github.com/education) pack we will get free access to [GittHub Copilot Pro](https://github.com/features/copilot) to help us write code: think about it as an enhanced auto-complete. Finally, we'll use [Air](https://posit-dev.github.io/air/) for automatically formatting our R code.
+We will also use [Git](https://git-scm.com/) to version control your code, which you can install following the [*Happy Git and GitHub for the useR*](https://happygitwithr.com/) book. Through the [GitHub Education](https://github.com/education) pack we will get free access to [GittHub Copilot Pro](https://github.com/features/copilot) to help us write code: think about it as an enhanced auto-complete. Finally, we'll use [Air](https://posit-dev.github.io/air/) for automatically formatting our R code.
 
 #### How to Download R for Windows {-}
 
@@ -169,6 +171,10 @@ Go to <https://cran.r-project.org> and
 
 3.  Click on "Download R 4.5.2 for Windows"
 
+![Video Demo for Downloading R for Windows](https://lcolladotor.github.io/jhustatcomputing/videos/downloadRWindows.gif){width="80%"}
+
+_The version in the video is not the latest version of R. Please download the latest version._
+
 #### How to Download R for the Mac {-}
 
 Go to <https://cran.r-project.org> and
@@ -176,6 +182,10 @@ Go to <https://cran.r-project.org> and
 1.  Click the link to "Download R for (Mac) OS X".
 
 2.  Click on "R-4.5.2-arm64.pkg" (for Apple Silicon Macs)
+
+![Video Demo for Downloading R for the Mac](https://lcolladotor.github.io/jhustatcomputing/videos/downloadRMac.gif){width="80%"}
+
+_The version in the video is not the latest version of R. Please download the latest version._
 
 #### How to Download `RStudio IDE` {-}
 
@@ -190,6 +200,10 @@ Go to <https://posit.co/> (formerly [https://rstudio.com]()) and
 4.  Click the button under "Download RStudio" which will take you to <https://posit.co/download/rstudio-desktop/>
 
 5.  Under the section "All Installers and Tarballs" choose the file that is appropriate for your operating system.
+
+![Video Demo for Downloading RStudio](https://lcolladotor.github.io/jhustatcomputing/videos/downloadRStudio.gif){width="80%"}
+
+_NOTE: The video shows how to download RStudio for the Mac but you should download RStudio for whatever computing setup you have._
 
 #### How to Download Positron {-}
 
@@ -229,7 +243,7 @@ Go to <https://github.com/education> and
 2.  Sign in to your GitHub account if you haven't logged in
 3.  Click on "Start Application"
 4.  There will be a few options to verify that you are a student. One of them is by having a photo of your student ID with dates showing that your student ID is still valid. I've used a screenshot of my Faculty website at <https://publichealth.jhu.edu/faculty/4647/leonardo-collado-torres> when validating my information.
-5.  Wait a few days for GitHub to process your application.
+5.  Wait a few **days** for GitHub to process your application.
 6.  Once your application has been approved, if you are using `RStudio IDE` follow the instructions at <https://docs.posit.co/ide/user/ide/guide/tools/copilot.html> to enable GitHub Copilot in RStudio IDE. I have the "Index project files with GitHub Copilot" checkbox enabled on my preferences.
 7.  If you are using `Positron`, follow the instructions at <https://positron.posit.co/assistant> to enable "Positron assistant". Then under the "Positron Assistant" chat, click on "Add Anthropic as a Chat Provider", then select "GitHub Copilot" and click "Sign in".
 

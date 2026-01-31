@@ -1,6 +1,6 @@
 # smokingMouse
 
-_Impartida por [Daianna González Padilla](https://daianna21.github.io/)_
+_Impartida por [Daianna González Padilla](https://daianna-glez.github.io/)_
 
 * [Tutorial Expresión diferencial](http://research.libd.org/SPEAQeasyWorkshop2023/articles/SPEAQeasyWorkshop2023.html)
 * Código: [LieberInstitute/smoking-nicotine-mouse](https://github.com/LieberInstitute/smoking-nicotine-mouse)
