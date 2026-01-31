@@ -16,7 +16,8 @@
     -   <https://bsky.app/profile/lcolladotor.bsky.social> (principal medio actualmente)
     -   <https://twitter.com/lcolladotor> (originalmente)
     -   <https://www.youtube.com/@lcolladotor>
-    -   LIBD rstats club <https://docs.google.com/spreadsheets/d/1is8dZSd0FZ9Qi1Zvq1uRhm-P1McnJRd_zxdAfCRoMfA/edit?usp=sharing>
+    -   <https://www.instagram.com/lcolladotor/>
+    -   LIBD RStats club <https://docs.google.com/spreadsheets/d/1is8dZSd0FZ9Qi1Zvq1uRhm-P1McnJRd_zxdAfCRoMfA/edit?usp=sharing>
     -   <https://bsky.app/profile/cdsbmexico.bsky.social> y <https://bsky.app/profile/libdrstats.bsky.social>
 
 <img src="icon_192.png"/>
@@ -37,6 +38,7 @@
 
 * Es para obtener acceso gratiuto a GitHub Pro y GitHub Copilot. En <https://github.com/education/students> vienen los detalles y los pasos a seguir.
 * Hagan su cuenta de GitHub usando su email de la LCG-UNAM (tiene que ser un email de una institución académica). Así podrán completar la solicitud para el GitHub Education pack vía <https://education.github.com/discount_requests/application>.
+  * Es posible que necesiten una carta en inglés por parte de la administración de la LCG con las fechas de cuando empezaron la LCG y cuando se estima que se graduarán. 
 * Una vez que GitHub se los autorice podrán configurar su Positron para usar GitHub Copilot siguiendo las instrucciones de <https://positron.posit.co/assistant-getting-started.html>. 
   - Para RStudio sigan los siguientes pasos: <https://docs.posit.co/ide/user/ide/guide/tools/copilot.html>. Estos son los settings que uso en mi RStudio:
 
@@ -49,7 +51,7 @@
     - "Show me how to use the here package"
     - "Muestrame como usar el paquete de here"
     - "Muestrame como usar el paquete de here con comentarios en español"
-* Alternativamente, pueden usar <https://bard.google.com/> u otros sitios web como <https://bing.com/chat>.
+* Alternativamente, pueden usar <https://gemini.google.com/> u otros sitios web como <https://copilot.microsoft.com/>.
   - "Show me how to use the SummarizedExperiment package in Spanish"
   - "How do you download data with recount3"
   - Para usar Google Gemini desde R se puede con <https://jhk0530.github.io/gemini.R/>
@@ -139,7 +141,7 @@ llm_use("ollama", "llama3.2", seed = 100)
 
 - Positron es gratis y lo podemos obtener descargar desde <https://positron.posit.co/download.html>.
 - Es una versión más moderna que RStudio y más compatible con Python, no solo con R.
-- Está basado en VS Code, que es otro IDE.
+- Está basado en [VS Code](https://code.visualstudio.com/), que es otro IDE.
 
 ## RStudio
 
@@ -181,12 +183,13 @@ if (interactive() && requireNamespace("rsthemes", quietly = TRUE)) {
 options(repos = c(CRAN = "https://cloud.r-project.org"))
 ```
 
--   Es actualizado con bastante frecuencia
 -   RStudio cheatsheets <https://posit.co/resources/cheatsheets/>
     -   <https://posit.co/wp-content/uploads/2022/10/rstudio-ide-1.pdf>
--   RStudio projects: usalos para organizar tu código
+-   RStudio projects (archivos `.Rproj`): usalos para organizar tu código
     -   <https://github.com/ComunidadBioInfo/cdsb2020/blob/master/presentaciones_flujos-de-trabajo/Trabajando-con-proyectos.pdf>
-
+    -   El concepto de `.Rproj` ya no existe con Positron, aunque hay ciertas funciones equivalentes <https://positron.posit.co/migrate-rstudio-rproj.html>.
+    
+    
 ## Repositorio de notas para el curso
 
 ```{r proj, eval = FALSE}
@@ -435,7 +438,7 @@ Para comenzar a personalizar una de estas plantillas, debes crear un nuevo proye
 
 ### Crear un nuevo proyecto en RStudio (selección interactiva)
 
-Si usas RStudio:
+Si usas RStudio IDE:
 
 -   selecciona "File", "New Project"...
 -   Elige "New Directory", "Postcards Website"
@@ -504,4 +507,4 @@ rmarkdown::render("index.Rmd")
 
 ### Compartan su página
 
-Sientanse libres de compartir su página con el mundo. Si usan Bluesky, usen el hashtag #postcards y etiqueten al autor @seankross.com <https://bsky.app/profile/seankross.com>.
+Sientanse libres de compartir su página con el mundo. Si usan Bluesky, usen el hashtag #postcards y etiqueten al autor Sean Kross <https://bsky.app/profile/seankross.com>.
