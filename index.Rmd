@@ -78,6 +78,7 @@ _Local times in Cuernavaca, Mexico_
 * [LCG-UNAM RStudio server](http://132.248.220.108:8787/)
 * [CDSB](https://comunidadbioinfo.github.io/). 
 * [Slack CDSB Mexico](https://comunidadbioinfo.slack.com), in particular the [`intro_rnaseq_lcg_2026` channel](https://comunidadbioinfo.slack.com/archives/C0AC8U6UPD2). You can join this Slack workspace through [this link](https://join.slack.com/t/comunidadbioinfo/shared_invite/zt-8lsvpm84-Fne1W0hadk6cpjgJS17Tnw).
+* [Bioconductor Zulip](https://community-bioc.zulipchat.com/) community
 * [LieberInstitute/template_project](https://github.com/LieberInstitute/template_project)
 * Example real project by [Daianna González Padilla](https://daianna21.github.io/): [LieberInstitute/smoking-nicotine-mouse](https://github.com/LieberInstitute/smoking-nicotine-mouse)
   
@@ -127,7 +128,7 @@ You will also need to install [RStudio](https://rstudio.com/products/rstudio/dow
   - (optional, strongly encouraged for your own career) Community building: CDSB Slack (introduce yourself), Bluesky, GitHub, etc. These are tracked by the TA: please let the TA know of your participations.
     - GitHub issues on the course repository
     - CDSB Slack [#bienvenida](https://comunidadbioinfo.slack.com/archives/CAB6CHXUY) channel
-    - Bioconductor Slack [#introductions](https://community-bioc.slack.com/archives/C36B0HK7W) channel
+    - Bioconductor Zulip [#introductions](https://community-bioc.zulipchat.com/#narrow/channel/507510-introductions/topic//with/567532456) channel
     - Bluesky posts related to the course
   - Grading:
     - 0%: no participation
