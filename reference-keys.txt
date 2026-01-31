@@ -1,8 +1,10 @@
-introducción-a-r-y-rstudio
+introducción-a-r-y-positron
 r
 github
 github-education-y-el-uso-de-ia-para-escribir-código
+positron
 rstudio
+repositorio-de-notas-para-el-curso
 material-del-curso
 actividad-postcards
 create-beautiful-simple-personal-websites
