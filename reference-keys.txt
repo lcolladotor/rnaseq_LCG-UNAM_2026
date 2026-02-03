@@ -29,6 +29,7 @@ summarizedexperiment
 ejercicio
 isee
 ejercicio-con-spatiallibd
+ejemplo-con-hb_vta_projector_profiling
 comunidad-1
 datos-de-rna-seq-a-través-de-recount3
 procesar-datos-crudos-fastq-con-speaqeasy
@@ -52,6 +53,8 @@ comunidad-3
 ejercicio-respuesta
 sobre-centering-y-scaling-en-heatmaps
 específicaciones-del-proyecto
+plática-de-maria-gutierrez-arcelus
+análisis-de-snrna-seq
 smokingmouse
 revisión
 ejercicio-en-equipo
