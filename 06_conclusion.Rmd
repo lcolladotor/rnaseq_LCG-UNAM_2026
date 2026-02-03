@@ -225,6 +225,14 @@ if (interactive()) {
 
 <https://lcolladotor.github.io/>
 
+* Versión 2025
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/alL-g2roXxM?si=ncziMoepBEZOJwrd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<script defer class="speakerdeck-embed" data-id="21f0f91a68b14806a2f489a371f29e94" data-ratio="1.7772511848341233" src="//speakerdeck.com/assets/embed.js"></script>
+
+* Versión 2022
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/33scakbTNO0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <script async class="speakerdeck-embed" data-id="3c32410b600740abb4724486e83ebd30" data-ratio="1.77725118483412" src="//speakerdeck.com/assets/embed.js"></script>
@@ -255,9 +263,7 @@ Aquí hay una versión anterior:
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Are you working with spatial transcriptomics data such as Visium from <a href="https://twitter.com/10xGenomics?ref_src=twsrc%5Etfw">@10xGenomics</a>? Then you&#39;ll be interested in <a href="https://twitter.com/hashtag/SpatialExperiment?src=hash&amp;ref_src=twsrc%5Etfw">#SpatialExperiment</a> 📦 led by <a href="https://twitter.com/drighelli?ref_src=twsrc%5Etfw">@drighelli</a> <a href="https://twitter.com/lmwebr?ref_src=twsrc%5Etfw">@lmwebr</a> <a href="https://twitter.com/CrowellHL?ref_src=twsrc%5Etfw">@CrowellHL</a> with contributions by <a href="https://twitter.com/PardoBree?ref_src=twsrc%5Etfw">@PardoBree</a> <a href="https://twitter.com/shazanfar?ref_src=twsrc%5Etfw">@shazanfar</a> A Lun <a href="https://twitter.com/stephaniehicks?ref_src=twsrc%5Etfw">@stephaniehicks</a> <a href="https://twitter.com/drisso1893?ref_src=twsrc%5Etfw">@drisso1893</a> 🌟<br><br>📜 <a href="https://t.co/r36qlakRJe">https://t.co/r36qlakRJe</a> <a href="https://t.co/cWIiwLFitV">pic.twitter.com/cWIiwLFitV</a></p>&mdash; 🇲🇽 Leonardo Collado-Torres (@lcolladotor) <a href="https://twitter.com/lcolladotor/status/1355208674856329218?ref_src=twsrc%5Etfw">January 29, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Brenda Pardo
-
-https://twitter.com/PardoBree
+[Brenda Pardo](https://twitter.com/PardoBree)
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Today I gave my first talk at a congress in <a href="https://twitter.com/hashtag/EuroBioc2020?src=hash&amp;ref_src=twsrc%5Etfw">#EuroBioc2020</a> about our work on adapting the package <a href="https://twitter.com/hashtag/spatialLIBD?src=hash&amp;ref_src=twsrc%5Etfw">#spatialLIBD</a> to use VisiumExperiment objects. <a href="https://t.co/U23yE32RWM">pic.twitter.com/U23yE32RWM</a></p>&mdash; Brenda Pardo (@PardoBree) <a href="https://twitter.com/PardoBree/status/1338560370382942209?ref_src=twsrc%5Etfw">December 14, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -270,7 +276,11 @@ https://twitter.com/PardoBree
 
 <a href="https://go.bsky.app/5bWBN5V"><img src="images/Genomics_scientists_trained_working_in_Mexico_🇲🇽_Share_Card.png" width="500px" /></a>
 
-<a href="https://go.bsky.app/53gy4UP"><img src="images/images/LIBD_Data_Science_Team_1__members_&_alumni_Share_Card.png" width="500px" /></a>
+<a href="https://go.bsky.app/53gy4UP"><img src="images/LIBD_Data_Science_Team_1__members_&_alumni_Share_Card.png" width="500px" /></a>
+
+<a href="https://go.bsky.app/6z3UKe5"><img src="images/images/💻_LIBD_rstats_club_contributors_Share_Card.png" width="500px" /></a>
+
+<a href="https://go.bsky.app/VhR2e62"><img src="images/🧠_LIBD_members_and_alumni_Share_Card.png" width="500px" /></a>
 
 * <https://mircommunity.com/>
 * <https://bsky.app/profile/rainbowr.org>
