@@ -25,12 +25,12 @@ Instructor:
 
 Teaching assistants:
 
-* Maria Jose Palma, [Bluesky](), [LinkedIn]()
+* Maria José Palma Martínez, [Bluesky](), [LinkedIn]()
 
 Guest presenters:
 
 * [Melissa Mayén Quiroz](https://melii99.github.io/), [Bluesky](https://bsky.app/profile/meli-mq99.bsky.social)
-* [Maria Gutierrez-Arcelus](https://www.gutierrezarceluslab.com/), [Bluesky](https://bsky.app/profile/mariagtac.bsky.social)
+* [Maria Gutiérrez-Arcelus](https://www.gutierrezarceluslab.com/), [Bluesky](https://bsky.app/profile/mariagtac.bsky.social)
 * [Gabriel Ramírez-Vilchis](https://gabrielramirezv.github.io/), [Bluesky](https://bsky.app/profile/gabrielramirezv.bsky.social)
 * [Daianna González Padilla](https://daianna-glez.github.io/), [Bluesky](https://bsky.app/profile/daiannaglez.bsky.social)
 
@@ -70,7 +70,7 @@ _Local times in Cuernavaca, Mexico_
 * Friday February 13:
   - 9-11 am: exploring statistical models with `r BiocStyle::Biocpkg("ExploreModelMatrix")`
   - 12-1:30 pm: current examples of RNA-seq data analysis
-    - Guest presentation by [Maria Gutierrez-Arcelus](https://www.gutierrezarceluslab.com/)
+    - Guest presentation by [Maria Gutiérrez-Arcelus](https://www.gutierrezarceluslab.com/)
     - Guest presentation by [Gabriel Ramírez-Vilchis](https://gabrielramirezv.github.io/)
     - Guest presentation by [Daianna González Padilla](https://daianna-glez.github.io/)
   - 1:30-2 pm: differential expression analysis with `r BiocStyle::Biocpkg("limma")`

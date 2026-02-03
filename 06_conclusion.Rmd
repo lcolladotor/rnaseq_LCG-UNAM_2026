@@ -1,6 +1,6 @@
-# Plática de Maria Gutierrez-Arcelus
+# Plática de Maria Gutiérrez-Arcelus
 
-*Impartida por [Maria Gutierrez-Arcelus](https://www.gutierrezarceluslab.com/)*
+*Impartida por [Maria Gutiérrez-Arcelus](https://www.gutierrezarceluslab.com/)*
 
 <!--
 Agregar aquí código para "embed" tu plática si la tienes en speakdeck.com (recomiendo usar tu cuenta de GitHub para el login). A menos de que no quieras hacer pública la plática.
