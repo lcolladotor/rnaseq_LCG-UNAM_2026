@@ -65,7 +65,7 @@
 install.packages("ellmer")
 ## Sometimes the release version has a bug, like
 ## https://github.com/tidyverse/ellmer/issues/878
-## in this case right now. So we have to use the 
+## in this case right now. So we have to use the
 ## development version.
 remotes::install_github("tidyverse/ellmer")
 

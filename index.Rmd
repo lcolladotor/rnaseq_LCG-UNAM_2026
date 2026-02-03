@@ -74,8 +74,9 @@ _Local times in Cuernavaca, Mexico_
     - Guest presentation by [Gabriel Ramírez-Vilchis](https://gabrielramirezv.github.io/)
     - Guest presentation by [Daianna González Padilla](https://daianna-glez.github.io/)
   - 1:30-2 pm: differential expression analysis with `r BiocStyle::Biocpkg("limma")`
-    - + review
-    - + _R/Bioconductor-powered Team Data Science_ overview + open discussion (career paths, networking, etc)
+    - review
+    - _R/Bioconductor-powered Team Data Science_ overview
+      - Potentially after 2 pm: open discussion (career paths, networking, etc)
   
 ## External links {-}
 
