@@ -101,6 +101,8 @@ rse[, c("A", "D", "F")]
 
 ## iSEE
 
+*Impartida por [Melissa Mayén Quiroz](https://melii99.github.io/)*
+
 * <http://bioconductor.org/packages/iSEE>
 * <http://bioconductor.org/packages/release/bioc/vignettes/iSEE/inst/doc/basic.html>
 
@@ -147,6 +149,15 @@ ENSG00000168314 # MOBP
 ENSG00000183036 # PCP4
 ENSG00000197971 # MBP
 ```
+
+## Ejemplo con Hb_VTA_projector_profiling
+
+Código del proyecto: [LieberInstitute/Hb_VTA_projector_profiling](https://github.com/LieberInstitute/Hb_VTA_projector_profiling)
+Código del app de `r BiocStyle::Biocpkg("iSEE")`: *Meli, porfa agrega la liga, ¡gracias!*
+
+<!--
+Agregar aquí código para "embed" tu plática si la tienes en speakdeck.com (recomiendo usar tu cuenta de GitHub para el login). A menos de que no quieras hacer pública la plática.
+-->
 
 ## Comunidad
 
