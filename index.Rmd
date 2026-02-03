@@ -65,8 +65,8 @@ _Local times in Cuernavaca, Mexico_
     - 12-1 pm: `r BiocStyle::Biocpkg("SummarizedExperiment")` intro
     - 1-2 pm: [Melissa Mayén Quiroz](https://melii99.github.io/) will teach you about `r BiocStyle::Biocpkg("iSEE")` and showcase an `r BiocStyle::Biocpkg("iSEE")` app she made for [LieberInstitute/Hb_VTA_projector_profiling](https://github.com/LieberInstitute/Hb_VTA_projector_profiling).
 * Thursday February 12:
-  - 9-11 am: making your own website with `r BiocStyle::CRANpkg("postcards")` 
-  - 12-2 pm: downloading RNA-seq data using `r BiocStyle::Biocpkg("recount3")` by [Gabriel Ramírez-Vilchis](https://gabrielramirezv.github.io/)
+  - 9-11 am: making your own website with `r BiocStyle::CRANpkg("postcards")` by [Gabriel Ramírez-Vilchis](https://gabrielramirezv.github.io/)
+  - 12-2 pm: downloading RNA-seq data using `r BiocStyle::Biocpkg("recount3")`
 * Friday February 13:
   - 9-11 am: exploring statistical models with `r BiocStyle::Biocpkg("ExploreModelMatrix")`
   - 12-1:30 pm: current examples of RNA-seq data analysis
