@@ -247,7 +247,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="11" data-path="spatiallibd.html"><a href="spatiallibd.html"><i class="fa fa-check"></i><b>11</b> spatialLIBD</a></li>
 <li class="chapter" data-level="12" data-path="comunidad-4.html"><a href="comunidad-4.html"><i class="fa fa-check"></i><b>12</b> Comunidad</a>
 <ul>
-<li class="chapter" data-level="12.1" data-path="comunidad-4.html"><a href="comunidad-4.html#de-alumnxs-lcg-2021"><i class="fa fa-check"></i><b>12.1</b> De alumnxs LCG 2021</a></li>
+<li class="chapter" data-level="12.1" data-path="comunidad-4.html"><a href="comunidad-4.html#de-alumnxs-lcg"><i class="fa fa-check"></i><b>12.1</b> De alumnxs LCG</a></li>
 <li class="chapter" data-level="12.2" data-path="comunidad-4.html"><a href="comunidad-4.html#de-ustedes"><i class="fa fa-check"></i><b>12.2</b> De ustedes</a></li>
 </ul></li>
 </ul>
@@ -409,32 +409,32 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode" id="cb105"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb105-1"><a href="modelos-estadísticos.html#cb105-1" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&quot;recount3&quot;</span>)</span>
 <span id="cb105-2"><a href="modelos-estadísticos.html#cb105-2" tabindex="-1"></a></span>
 <span id="cb105-3"><a href="modelos-estadísticos.html#cb105-3" tabindex="-1"></a>human_projects <span class="ot">&lt;-</span> <span class="fu">available_projects</span>()</span></code></pre></div>
-<pre><code>## 2026-02-03 04:35:22.330259 caching file sra.recount_project.MD.gz.</code></pre>
-<pre><code>## 2026-02-03 04:35:22.545127 caching file gtex.recount_project.MD.gz.</code></pre>
-<pre><code>## 2026-02-03 04:35:22.778829 caching file tcga.recount_project.MD.gz.</code></pre>
+<pre><code>## 2026-02-03 04:47:55.542474 caching file sra.recount_project.MD.gz.</code></pre>
+<pre><code>## 2026-02-03 04:47:55.953151 caching file gtex.recount_project.MD.gz.</code></pre>
+<pre><code>## 2026-02-03 04:47:56.329595 caching file tcga.recount_project.MD.gz.</code></pre>
 <div class="sourceCode" id="cb109"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb109-1"><a href="modelos-estadísticos.html#cb109-1" tabindex="-1"></a>rse_gene_SRP045638 <span class="ot">&lt;-</span> <span class="fu">create_rse</span>(</span>
 <span id="cb109-2"><a href="modelos-estadísticos.html#cb109-2" tabindex="-1"></a>    <span class="fu">subset</span>(</span>
 <span id="cb109-3"><a href="modelos-estadísticos.html#cb109-3" tabindex="-1"></a>        human_projects,</span>
 <span id="cb109-4"><a href="modelos-estadísticos.html#cb109-4" tabindex="-1"></a>        project <span class="sc">==</span> <span class="st">&quot;SRP045638&quot;</span> <span class="sc">&amp;</span> project_type <span class="sc">==</span> <span class="st">&quot;data_sources&quot;</span></span>
 <span id="cb109-5"><a href="modelos-estadísticos.html#cb109-5" tabindex="-1"></a>    )</span>
 <span id="cb109-6"><a href="modelos-estadísticos.html#cb109-6" tabindex="-1"></a>)</span></code></pre></div>
-<pre><code>## 2026-02-03 04:35:25.374841 downloading and reading the metadata.</code></pre>
-<pre><code>## 2026-02-03 04:35:25.573953 caching file sra.sra.SRP045638.MD.gz.</code></pre>
+<pre><code>## 2026-02-03 04:47:58.935828 downloading and reading the metadata.</code></pre>
+<pre><code>## 2026-02-03 04:47:59.32996 caching file sra.sra.SRP045638.MD.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/data_sources/sra/metadata/38/SRP045638/sra.sra.SRP045638.MD.gz&#39;</code></pre>
-<pre><code>## 2026-02-03 04:35:26.309674 caching file sra.recount_project.SRP045638.MD.gz.</code></pre>
+<pre><code>## 2026-02-03 04:48:00.481657 caching file sra.recount_project.SRP045638.MD.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/data_sources/sra/metadata/38/SRP045638/sra.recount_project.SRP045638.MD.gz&#39;</code></pre>
-<pre><code>## 2026-02-03 04:35:27.098722 caching file sra.recount_qc.SRP045638.MD.gz.</code></pre>
+<pre><code>## 2026-02-03 04:48:01.616632 caching file sra.recount_qc.SRP045638.MD.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/data_sources/sra/metadata/38/SRP045638/sra.recount_qc.SRP045638.MD.gz&#39;</code></pre>
-<pre><code>## 2026-02-03 04:35:27.897486 caching file sra.recount_seq_qc.SRP045638.MD.gz.</code></pre>
+<pre><code>## 2026-02-03 04:48:02.732573 caching file sra.recount_seq_qc.SRP045638.MD.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/data_sources/sra/metadata/38/SRP045638/sra.recount_seq_qc.SRP045638.MD.gz&#39;</code></pre>
-<pre><code>## 2026-02-03 04:35:28.610768 caching file sra.recount_pred.SRP045638.MD.gz.</code></pre>
+<pre><code>## 2026-02-03 04:48:03.923218 caching file sra.recount_pred.SRP045638.MD.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/data_sources/sra/metadata/38/SRP045638/sra.recount_pred.SRP045638.MD.gz&#39;</code></pre>
-<pre><code>## 2026-02-03 04:35:29.2004 downloading and reading the feature information.</code></pre>
-<pre><code>## 2026-02-03 04:35:29.375054 caching file human.gene_sums.G026.gtf.gz.</code></pre>
-<pre><code>## 2026-02-03 04:35:29.776874 downloading and reading the counts: 66 samples across 63856 features.</code></pre>
-<pre><code>## 2026-02-03 04:35:30.012518 caching file sra.gene_sums.SRP045638.G026.gz.</code></pre>
+<pre><code>## 2026-02-03 04:48:04.849191 downloading and reading the feature information.</code></pre>
+<pre><code>## 2026-02-03 04:48:05.237047 caching file human.gene_sums.G026.gtf.gz.</code></pre>
+<pre><code>## 2026-02-03 04:48:05.618075 downloading and reading the counts: 66 samples across 63856 features.</code></pre>
+<pre><code>## 2026-02-03 04:48:05.977024 caching file sra.gene_sums.SRP045638.G026.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/data_sources/sra/gene_sums/38/SRP045638/sra.gene_sums.SRP045638.G026.gz&#39;</code></pre>
-<pre><code>## 2026-02-03 04:35:31.052829 constructing the RangedSummarizedExperiment (rse) object.</code></pre>
+<pre><code>## 2026-02-03 04:48:07.292024 constructing the RangedSummarizedExperiment (rse) object.</code></pre>
 <div class="sourceCode" id="cb127"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb127-1"><a href="modelos-estadísticos.html#cb127-1" tabindex="-1"></a><span class="fu">assay</span>(rse_gene_SRP045638, <span class="st">&quot;counts&quot;</span>) <span class="ot">&lt;-</span> <span class="fu">compute_read_counts</span>(rse_gene_SRP045638)</span></code></pre></div>
 <p>Una vez descargados y con los números de lecturas podemos usar <code>expand_sra_attributes()</code>. Sin embargo, tenemos un problema con estos datos.</p>
 <div class="sourceCode" id="cb128"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb128-1"><a href="modelos-estadísticos.html#cb128-1" tabindex="-1"></a>rse_gene_SRP045638<span class="sc">$</span>sra.sample_attributes[<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>]</span></code></pre></div>
@@ -883,7 +883,7 @@ If you've ever been dazed by design matrices or confused by contrasts when perfo
 
       <center>
 <p class="powered-by">
-© 2011-2020. All thoughts and opinions here are my own. The icon was designed by <a href="https://www.linkedin.com/in/mauricio-guzman-6529b551/">Mauricio Guzmán</a> and is inspired by <a href="https://en.wikipedia.org/wiki/Huichol">Huichol culture</a>; it represents my community building interests.
+© 2011-2026. All thoughts and opinions here are my own. The icon was designed by <a href="https://www.linkedin.com/in/mauricio-guzman-6529b551/">Mauricio Guzmán</a> and is inspired by <a href="https://en.wikipedia.org/wiki/Huichol">Huichol culture</a>; it represents my community building interests.
 </p>
 
 <p class="powered-by copyright-license-text">

@@ -247,7 +247,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="11" data-path="spatiallibd.html"><a href="spatiallibd.html"><i class="fa fa-check"></i><b>11</b> spatialLIBD</a></li>
 <li class="chapter" data-level="12" data-path="comunidad-4.html"><a href="comunidad-4.html"><i class="fa fa-check"></i><b>12</b> Comunidad</a>
 <ul>
-<li class="chapter" data-level="12.1" data-path="comunidad-4.html"><a href="comunidad-4.html#de-alumnxs-lcg-2021"><i class="fa fa-check"></i><b>12.1</b> De alumnxs LCG 2021</a></li>
+<li class="chapter" data-level="12.1" data-path="comunidad-4.html"><a href="comunidad-4.html#de-alumnxs-lcg"><i class="fa fa-check"></i><b>12.1</b> De alumnxs LCG</a></li>
 <li class="chapter" data-level="12.2" data-path="comunidad-4.html"><a href="comunidad-4.html#de-ustedes"><i class="fa fa-check"></i><b>12.2</b> De ustedes</a></li>
 </ul></li>
 </ul>
@@ -322,11 +322,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Después tenemos que identificar un estudio de interes y determinar si queremos accesar la información a nivel de genes, exones, etc. Sabiendo el estudio de interes, podemos descargar los datos usando la función <code>create_rse()</code> como mostramos a continuación. <code>create_rse()</code> tiene argumentos con los cuales podemos especificar la <strong>anotación</strong> que queremos usar (las opciones dependen del organismo).</p>
 <div class="sourceCode" id="cb63"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb63-1"><a href="datos-de-rna-seq-a-través-de-recount3.html#cb63-1" tabindex="-1"></a><span class="do">## Revisemos todos los proyectos con datos de humano en recount3</span></span>
 <span id="cb63-2"><a href="datos-de-rna-seq-a-través-de-recount3.html#cb63-2" tabindex="-1"></a>human_projects <span class="ot">&lt;-</span> <span class="fu">available_projects</span>()</span></code></pre></div>
-<pre><code>## 2026-02-03 04:35:08.945786 caching file sra.recount_project.MD.gz.</code></pre>
+<pre><code>## 2026-02-03 04:47:37.680147 caching file sra.recount_project.MD.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/data_sources/sra/metadata/sra.recount_project.MD.gz&#39;</code></pre>
-<pre><code>## 2026-02-03 04:35:09.861798 caching file gtex.recount_project.MD.gz.</code></pre>
+<pre><code>## 2026-02-03 04:47:39.335426 caching file gtex.recount_project.MD.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/data_sources/gtex/metadata/gtex.recount_project.MD.gz&#39;</code></pre>
-<pre><code>## 2026-02-03 04:35:10.584757 caching file tcga.recount_project.MD.gz.</code></pre>
+<pre><code>## 2026-02-03 04:47:40.483651 caching file tcga.recount_project.MD.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/data_sources/tcga/metadata/tcga.recount_project.MD.gz&#39;</code></pre>
 <div class="sourceCode" id="cb70"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb70-1"><a href="datos-de-rna-seq-a-través-de-recount3.html#cb70-1" tabindex="-1"></a><span class="do">## Encuentra tu proyecto de interés. Aquí usaremos</span></span>
 <span id="cb70-2"><a href="datos-de-rna-seq-a-través-de-recount3.html#cb70-2" tabindex="-1"></a><span class="do">## SRP009615 de ejemplo</span></span>
@@ -337,24 +337,24 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb70-7"><a href="datos-de-rna-seq-a-través-de-recount3.html#cb70-7" tabindex="-1"></a><span class="do">## Crea un objeto de tipo RangedSummarizedExperiment (RSE)</span></span>
 <span id="cb70-8"><a href="datos-de-rna-seq-a-través-de-recount3.html#cb70-8" tabindex="-1"></a><span class="do">## con la información a nivel de genes</span></span>
 <span id="cb70-9"><a href="datos-de-rna-seq-a-través-de-recount3.html#cb70-9" tabindex="-1"></a>rse_gene_SRP009615 <span class="ot">&lt;-</span> <span class="fu">create_rse</span>(proj_info)</span></code></pre></div>
-<pre><code>## 2026-02-03 04:35:15.607426 downloading and reading the metadata.</code></pre>
-<pre><code>## 2026-02-03 04:35:15.824883 caching file sra.sra.SRP009615.MD.gz.</code></pre>
+<pre><code>## 2026-02-03 04:47:45.757782 downloading and reading the metadata.</code></pre>
+<pre><code>## 2026-02-03 04:47:46.094951 caching file sra.sra.SRP009615.MD.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/data_sources/sra/metadata/15/SRP009615/sra.sra.SRP009615.MD.gz&#39;</code></pre>
-<pre><code>## 2026-02-03 04:35:16.517683 caching file sra.recount_project.SRP009615.MD.gz.</code></pre>
+<pre><code>## 2026-02-03 04:47:47.202414 caching file sra.recount_project.SRP009615.MD.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/data_sources/sra/metadata/15/SRP009615/sra.recount_project.SRP009615.MD.gz&#39;</code></pre>
-<pre><code>## 2026-02-03 04:35:17.271311 caching file sra.recount_qc.SRP009615.MD.gz.</code></pre>
+<pre><code>## 2026-02-03 04:47:48.402116 caching file sra.recount_qc.SRP009615.MD.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/data_sources/sra/metadata/15/SRP009615/sra.recount_qc.SRP009615.MD.gz&#39;</code></pre>
-<pre><code>## 2026-02-03 04:35:18.060794 caching file sra.recount_seq_qc.SRP009615.MD.gz.</code></pre>
+<pre><code>## 2026-02-03 04:47:49.6659 caching file sra.recount_seq_qc.SRP009615.MD.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/data_sources/sra/metadata/15/SRP009615/sra.recount_seq_qc.SRP009615.MD.gz&#39;</code></pre>
-<pre><code>## 2026-02-03 04:35:18.743105 caching file sra.recount_pred.SRP009615.MD.gz.</code></pre>
+<pre><code>## 2026-02-03 04:47:50.752268 caching file sra.recount_pred.SRP009615.MD.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/data_sources/sra/metadata/15/SRP009615/sra.recount_pred.SRP009615.MD.gz&#39;</code></pre>
-<pre><code>## 2026-02-03 04:35:19.313283 downloading and reading the feature information.</code></pre>
-<pre><code>## 2026-02-03 04:35:19.503282 caching file human.gene_sums.G026.gtf.gz.</code></pre>
+<pre><code>## 2026-02-03 04:47:51.499448 downloading and reading the feature information.</code></pre>
+<pre><code>## 2026-02-03 04:47:51.863291 caching file human.gene_sums.G026.gtf.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/annotations/gene_sums/human.gene_sums.G026.gtf.gz&#39;</code></pre>
-<pre><code>## 2026-02-03 04:35:20.406175 downloading and reading the counts: 12 samples across 63856 features.</code></pre>
-<pre><code>## 2026-02-03 04:35:20.612879 caching file sra.gene_sums.SRP009615.G026.gz.</code></pre>
+<pre><code>## 2026-02-03 04:47:53.073758 downloading and reading the counts: 12 samples across 63856 features.</code></pre>
+<pre><code>## 2026-02-03 04:47:53.448731 caching file sra.gene_sums.SRP009615.G026.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/data_sources/sra/gene_sums/15/SRP009615/sra.gene_sums.SRP009615.G026.gz&#39;</code></pre>
-<pre><code>## 2026-02-03 04:35:21.318276 constructing the RangedSummarizedExperiment (rse) object.</code></pre>
+<pre><code>## 2026-02-03 04:47:54.429308 constructing the RangedSummarizedExperiment (rse) object.</code></pre>
 <div class="sourceCode" id="cb89"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb89-1"><a href="datos-de-rna-seq-a-través-de-recount3.html#cb89-1" tabindex="-1"></a><span class="do">## Explora el objeto RSE</span></span>
 <span id="cb89-2"><a href="datos-de-rna-seq-a-través-de-recount3.html#cb89-2" tabindex="-1"></a>rse_gene_SRP009615</span></code></pre></div>
 <pre><code>## class: RangedSummarizedExperiment 
@@ -469,7 +469,7 @@ Thinking on this a bit it is strange how few people are doing “medium-sized”
 
       <center>
 <p class="powered-by">
-© 2011-2020. All thoughts and opinions here are my own. The icon was designed by <a href="https://www.linkedin.com/in/mauricio-guzman-6529b551/">Mauricio Guzmán</a> and is inspired by <a href="https://en.wikipedia.org/wiki/Huichol">Huichol culture</a>; it represents my community building interests.
+© 2011-2026. All thoughts and opinions here are my own. The icon was designed by <a href="https://www.linkedin.com/in/mauricio-guzman-6529b551/">Mauricio Guzmán</a> and is inspired by <a href="https://en.wikipedia.org/wiki/Huichol">Huichol culture</a>; it represents my community building interests.
 </p>
 
 <p class="powered-by copyright-license-text">
