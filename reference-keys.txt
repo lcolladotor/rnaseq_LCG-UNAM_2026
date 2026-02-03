@@ -53,7 +53,7 @@ comunidad-3
 ejercicio-respuesta
 sobre-centering-y-scaling-en-heatmaps
 específicaciones-del-proyecto
-plática-de-maria-gutierrez-arcelus
+plática-de-maria-gutiérrez-arcelus
 análisis-de-snrna-seq
 smokingmouse
 revisión
