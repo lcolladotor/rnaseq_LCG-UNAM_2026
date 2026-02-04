@@ -71,8 +71,8 @@ _Local times in Cuernavaca, Mexico_
   - 9-11 am: exploring statistical models with `r BiocStyle::Biocpkg("ExploreModelMatrix")`
   - 12-1:30 pm: current examples of RNA-seq data analysis
     - Guest presentation by [Maria Gutiérrez-Arcelus](https://www.gutierrezarceluslab.com/)
-    - Guest presentation by [Gabriel Ramírez-Vilchis](https://gabrielramirezv.github.io/)
     - Guest presentation by [Daianna González Padilla](https://daianna-glez.github.io/)
+    - Guest presentation by [Gabriel Ramírez-Vilchis](https://gabrielramirezv.github.io/)
   - 1:30-2 pm: differential expression analysis with `r BiocStyle::Biocpkg("limma")`
     - review
     - _R/Bioconductor-powered Team Data Science_ overview
