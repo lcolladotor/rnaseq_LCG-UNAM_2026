@@ -54,8 +54,8 @@ ejercicio-respuesta
 sobre-centering-y-scaling-en-heatmaps
 específicaciones-del-proyecto
 plática-de-maria-gutiérrez-arcelus
-análisis-de-snrna-seq
 smokingmouse
+análisis-de-snrna-seq
 revisión
 ejercicio-en-equipo
 respuestas
