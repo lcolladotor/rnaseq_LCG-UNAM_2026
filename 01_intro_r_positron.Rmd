@@ -40,7 +40,7 @@
     
 ## GitHub Education y el uso de IA para escribir código
 
-* Es para obtener acceso gratiuto a GitHub Pro y GitHub Copilot. En <https://github.com/education/students> vienen los detalles y los pasos a seguir.
+* Es para obtener acceso gratuito a GitHub Pro y GitHub Copilot. En <https://github.com/education/students> vienen los detalles y los pasos a seguir.
 * Hagan su cuenta de GitHub usando su email de la LCG-UNAM (tiene que ser un email de una institución académica). Así podrán completar la solicitud para el GitHub Education pack vía <https://education.github.com/discount_requests/application>.
   * Es posible que necesiten una carta en inglés por parte de la administración de la LCG con las fechas de cuando empezaron la LCG y cuando se estima que se graduarán. 
 * Una vez que GitHub se los autorice podrán configurar su Positron para usar GitHub Copilot siguiendo las instrucciones de <https://positron.posit.co/assistant-getting-started.html>. 
@@ -148,7 +148,7 @@ llm_use("ollama", "llama3.2", seed = 100)
 
 ## Positron
 
-- Positron es gratis y lo podemos obtener descargar desde <https://positron.posit.co/download.html>.
+- Positron es gratis y lo podemos descargar desde <https://positron.posit.co/download.html>.
 - Es una versión más moderna que RStudio y más compatible con Python, no solo con R.
 - Está basado en [VS Code](https://code.visualstudio.com/), que es otro IDE.
 
@@ -285,7 +285,7 @@ En el servidor de [RStudio de la LCG-UNAM](http://132.248.220.108:8787/) no func
 usethis::edit_r_environ()
 ```
 
-Después guarden su token de GitHub usando la siguiente sintáxis (ojo con la línea en blanco al final, las mayúsculas al inicio, y el que no hay espacios antes y después del `=`).
+Después guarden su token de GitHub usando la siguiente sintaxis (ojo con la línea en blanco al final, las mayúsculas al inicio, y el que no hay espacios antes y después del `=`).
 
 ```         
 GITHUB_PAT=TU_CLAVE_DE_40_LETRAS
@@ -316,7 +316,7 @@ usethis::use_github()
 
 Resultado ejemplo: <https://github.com/lcolladotor/rnaseq_2021_notas>. El que hice en vivo está disponible vía <https://github.com/lcolladotor/rnaseq_2026_notas_en_vivo>.
 
-Una vez que termines, agrega la liga al repositorio con tus notas del curso en el [la página del curso](https://cursos.lcg.unam.mx/mod/url/view.php?id=9877).
+Una vez que termines, agrega la liga al repositorio con tus notas del curso en [la página del curso](https://cursos.lcg.unam.mx/mod/url/view.php?id=9877).
 
 ## Material del curso
 
@@ -390,7 +390,7 @@ En el mismo se encuentran las diapositivas: <https://github.com/Melii99/rnaseq_2
 
 -   Similar a <https://pages.github.com/>
 
--   Tu página web debe describir decir algo sobre ti, tus intereses, y tus proyectos además de cómo contactarte
+-   Tu página web debe decir algo sobre ti, tus intereses, y tus proyectos además de cómo contactarte
 
     Algunos ejemplos:
 
@@ -462,7 +462,7 @@ Selecciona "Create Project" después de elegir un nombre para la carpeta que con
 ### Crear un nuevo proyecto
 
 ```{r, eval=FALSE}
-## Crearun nuevo proyecto
+## Crear un nuevo proyecto
 usethis::create_project("Su_Usuario.github.io")
 ```
 
@@ -495,7 +495,7 @@ De esta manera también se obtienen los 2 archivos importantes:
 
 ### Editar con su información
 
--   Ahora deberán editar el documento R Markdown con su información y reemplazar la imágen con la que elijan :)
+-   Ahora deberán editar el documento R Markdown con su información y reemplazar la imagen con la que elijan :)
 
 -   Llenen su información usando el formato `Markdown`. Por ejemplo <https://github.com/andrewejaffe/andrewejaffe.github.io/blob/master/index.Rmd#L17-L31>.
 
@@ -516,4 +516,4 @@ rmarkdown::render("index.Rmd")
 
 ### Compartan su página
 
-Sientanse libres de compartir su página con el mundo. Si usan Bluesky, usen el hashtag #postcards y etiqueten al autor Sean Kross <https://bsky.app/profile/seankross.com>.
+Siéntanse libres de compartir su página con el mundo. Si usan Bluesky, usen el hashtag #postcards y etiqueten al autor Sean Kross <https://bsky.app/profile/seankross.com>.
