@@ -90,7 +90,7 @@ Bioconductor, the R package repository for the “analysis and comprehension of 
 
 ## Comunidad
 
-* Slack: <https://join.slack.com/t/community-bioc/shared_invite/zt-2yja08h1g-9GY3MuoIU3IXEl6ObJlhxg>
+* Zulip: <https://community-bioc.zulipchat.com/
 * Sitio web de ayuda: <https://support.bioconductor.org/>
     - Usa la(s) etiqueta(s) adecuada(s) para que lxs autores de los paquetes reciban email de forma automática
     - Ejemplo: <https://support.bioconductor.org/tag/recount3/>
