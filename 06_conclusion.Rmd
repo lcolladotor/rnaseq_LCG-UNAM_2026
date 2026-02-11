@@ -8,9 +8,12 @@ Agregar aquí código para "embed" tu plática si la tienes en speakdeck.com (re
 Maria, también cambia el título del "capítulo" en la línea 1.
 -->
 
-# smokingMouse
+# RNA-seq en el mundo real y (casi) todo lo que puede salir mal
 
 *Impartida por [Daianna González Padilla](https://daianna-glez.github.io/)*
+
+Presentación disponible [aquí](https://docs.google.com/presentation/d/1Y9Fb1H0NpkH5elUiqibS3if6NlMYi-zLNt22havIsK8/edit?usp=sharing). 
+
 
 <!--
 Agregar aquí código para "embed" tu plática si la tienes en speakdeck.com (recomiendo usar tu cuenta de GitHub para el login).
@@ -18,12 +21,9 @@ Agregar aquí código para "embed" tu plática si la tienes en speakdeck.com (re
 
 
 <!--
-Daianna, la info que tienes acá abajo es de otra ocasión que hablaste sobre smokingMouse.
+-
 -->
 
-* [Tutorial Expresión diferencial](http://research.libd.org/SPEAQeasyWorkshop2023/articles/SPEAQeasyWorkshop2023.html)
-* Código: [LieberInstitute/smoking-nicotine-mouse](https://github.com/LieberInstitute/smoking-nicotine-mouse)
-* Notas públicas de Daianna: [Notion](https://unequaled-boursin-0e1.notion.site/Modeling-the-effects-of-nicotine-and-smoking-exposures-on-the-developing-brain-85c9d6f413da4fd3a7dc1a5255f667d4).
 
 # Análisis de snRNA-seq
 
