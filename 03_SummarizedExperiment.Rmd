@@ -154,6 +154,7 @@ ENSG00000197971 # MBP
 
 Código del proyecto: [LieberInstitute/Hb_VTA_projector_profiling](https://github.com/LieberInstitute/Hb_VTA_projector_profiling)
 Código del app de `r BiocStyle::Biocpkg("iSEE")`: [Hb_VTA_projection_profiling_iSEE](https://interactive.libd.org/Hb_VTA_projection_profiling/)
+Presentación: [iSEE slides](https://speakerdeck.com/melii99/11022026-isee-hb-vta-lcg)
 
 <!--
 Agregar aquí código para "embed" tu plática si la tienes en speakdeck.com (recomiendo usar tu cuenta de GitHub para el login). A menos de que no quieras hacer pública la plática.
