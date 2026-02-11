@@ -69,13 +69,13 @@ Bioconductor, the R package repository for the “analysis and comprehension of 
 ## Las dos ramas de Bioconductor: release y devel
 
 * Dos ramas
-    - `release`, actualmente 3.20
-    - `devel`, actualmente 3.21
+    - `release`, actualmente 3.22
+    - `devel`, actualmente 3.23
     - Ejemplo: <http://bioconductor.org/packages/devel/bioc/html/recount.html>
 * Bioconductor es actualizado cada 6 meses (abril y octubre). R lo actualizan 1 vez al año (abril).
 * Todo el software lo prueban en macOS, Windows y linux
     - Ejemplo: <http://bioconductor.org/checkResults/release/bioc-LATEST/recount/> y <http://bioconductor.org/checkResults/devel/bioc-LATEST/recount/>
-* Resumen BioC 3.20 <http://bioconductor.org/news/bioc_3_20_release/>
+* Resumen BioC 3.22 <http://bioconductor.org/news/bioc_3_22_release/>
     - Blog post en LIBD rstats club: Quick overview on the new Bioconductor 3.8 release <http://research.libd.org/rstatsclub/2018/11/02/quick-overview-on-the-new-bioconductor-3-8-release/>
 
 
@@ -102,7 +102,7 @@ Bioconductor, the R package repository for the “analysis and comprehension of 
   
 ## Ejercicio grupal
 
-* Exploren en <http://bioconductor.org/news/bioc_3_20_release/> la lista de nuevos paquetes de Bioconductor (BioC 3.20)
+* Exploren en <http://bioconductor.org/news/bioc_3_22_release/> la lista de nuevos paquetes de Bioconductor (BioC 3.22)
 * Cada quien escoja un paquete o dos
 * Exploren la documentación del paquete, si es que está pasando las pruebas en los diferentes sistemas operativos, si es que lxs autores han respondido a las preguntas de lxs usuarixs, etc.
 * Discutan cuales paquetes les interesaron más como equipo y escriban un resumen de su discusión en sus notas en GitHub.
