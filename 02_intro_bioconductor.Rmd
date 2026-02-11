@@ -90,7 +90,7 @@ Bioconductor, the R package repository for the “analysis and comprehension of 
 
 ## Comunidad
 
-* Zulip: <https://community-bioc.zulipchat.com/
+* Zulip: <https://community-bioc.zulipchat.com/>
 * Sitio web de ayuda: <https://support.bioconductor.org/>
     - Usa la(s) etiqueta(s) adecuada(s) para que lxs autores de los paquetes reciban email de forma automática
     - Ejemplo: <https://support.bioconductor.org/tag/recount3/>
