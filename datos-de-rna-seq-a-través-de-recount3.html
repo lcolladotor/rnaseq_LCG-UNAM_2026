@@ -322,11 +322,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Después tenemos que identificar un estudio de interes y determinar si queremos accesar la información a nivel de genes, exones, etc. Sabiendo el estudio de interes, podemos descargar los datos usando la función <code>create_rse()</code> como mostramos a continuación. <code>create_rse()</code> tiene argumentos con los cuales podemos especificar la <strong>anotación</strong> que queremos usar (las opciones dependen del organismo).</p>
 <div class="sourceCode" id="cb63"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb63-1"><a href="datos-de-rna-seq-a-través-de-recount3.html#cb63-1" tabindex="-1"></a><span class="do">## Revisemos todos los proyectos con datos de humano en recount3</span></span>
 <span id="cb63-2"><a href="datos-de-rna-seq-a-través-de-recount3.html#cb63-2" tabindex="-1"></a>human_projects <span class="ot">&lt;-</span> <span class="fu">available_projects</span>()</span></code></pre></div>
-<pre><code>## 2026-02-11 21:05:13.160819 caching file sra.recount_project.MD.gz.</code></pre>
+<pre><code>## 2026-02-12 18:59:29.957741 caching file sra.recount_project.MD.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/data_sources/sra/metadata/sra.recount_project.MD.gz&#39;</code></pre>
-<pre><code>## 2026-02-11 21:05:14.609425 caching file gtex.recount_project.MD.gz.</code></pre>
+<pre><code>## 2026-02-12 18:59:31.356519 caching file gtex.recount_project.MD.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/data_sources/gtex/metadata/gtex.recount_project.MD.gz&#39;</code></pre>
-<pre><code>## 2026-02-11 21:05:15.695101 caching file tcga.recount_project.MD.gz.</code></pre>
+<pre><code>## 2026-02-12 18:59:32.45423 caching file tcga.recount_project.MD.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/data_sources/tcga/metadata/tcga.recount_project.MD.gz&#39;</code></pre>
 <div class="sourceCode" id="cb70"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb70-1"><a href="datos-de-rna-seq-a-través-de-recount3.html#cb70-1" tabindex="-1"></a><span class="do">## Encuentra tu proyecto de interés. Aquí usaremos</span></span>
 <span id="cb70-2"><a href="datos-de-rna-seq-a-través-de-recount3.html#cb70-2" tabindex="-1"></a><span class="do">## SRP009615 de ejemplo</span></span>
@@ -337,24 +337,24 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb70-7"><a href="datos-de-rna-seq-a-través-de-recount3.html#cb70-7" tabindex="-1"></a><span class="do">## Crea un objeto de tipo RangedSummarizedExperiment (RSE)</span></span>
 <span id="cb70-8"><a href="datos-de-rna-seq-a-través-de-recount3.html#cb70-8" tabindex="-1"></a><span class="do">## con la información a nivel de genes</span></span>
 <span id="cb70-9"><a href="datos-de-rna-seq-a-través-de-recount3.html#cb70-9" tabindex="-1"></a>rse_gene_SRP009615 <span class="ot">&lt;-</span> <span class="fu">create_rse</span>(proj_info)</span></code></pre></div>
-<pre><code>## 2026-02-11 21:05:21.357458 downloading and reading the metadata.</code></pre>
-<pre><code>## 2026-02-11 21:05:21.695158 caching file sra.sra.SRP009615.MD.gz.</code></pre>
+<pre><code>## 2026-02-12 18:59:38.244576 downloading and reading the metadata.</code></pre>
+<pre><code>## 2026-02-12 18:59:38.633301 caching file sra.sra.SRP009615.MD.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/data_sources/sra/metadata/15/SRP009615/sra.sra.SRP009615.MD.gz&#39;</code></pre>
-<pre><code>## 2026-02-11 21:05:22.732285 caching file sra.recount_project.SRP009615.MD.gz.</code></pre>
+<pre><code>## 2026-02-12 18:59:39.938746 caching file sra.recount_project.SRP009615.MD.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/data_sources/sra/metadata/15/SRP009615/sra.recount_project.SRP009615.MD.gz&#39;</code></pre>
-<pre><code>## 2026-02-11 21:05:23.750056 caching file sra.recount_qc.SRP009615.MD.gz.</code></pre>
+<pre><code>## 2026-02-12 18:59:41.286732 caching file sra.recount_qc.SRP009615.MD.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/data_sources/sra/metadata/15/SRP009615/sra.recount_qc.SRP009615.MD.gz&#39;</code></pre>
-<pre><code>## 2026-02-11 21:05:24.783537 caching file sra.recount_seq_qc.SRP009615.MD.gz.</code></pre>
+<pre><code>## 2026-02-12 18:59:42.706741 caching file sra.recount_seq_qc.SRP009615.MD.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/data_sources/sra/metadata/15/SRP009615/sra.recount_seq_qc.SRP009615.MD.gz&#39;</code></pre>
-<pre><code>## 2026-02-11 21:05:25.792025 caching file sra.recount_pred.SRP009615.MD.gz.</code></pre>
+<pre><code>## 2026-02-12 18:59:43.941296 caching file sra.recount_pred.SRP009615.MD.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/data_sources/sra/metadata/15/SRP009615/sra.recount_pred.SRP009615.MD.gz&#39;</code></pre>
-<pre><code>## 2026-02-11 21:05:26.476555 downloading and reading the feature information.</code></pre>
-<pre><code>## 2026-02-11 21:05:26.806439 caching file human.gene_sums.G026.gtf.gz.</code></pre>
+<pre><code>## 2026-02-12 18:59:44.828845 downloading and reading the feature information.</code></pre>
+<pre><code>## 2026-02-12 18:59:45.227839 caching file human.gene_sums.G026.gtf.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/annotations/gene_sums/human.gene_sums.G026.gtf.gz&#39;</code></pre>
-<pre><code>## 2026-02-11 21:05:27.856772 downloading and reading the counts: 12 samples across 63856 features.</code></pre>
-<pre><code>## 2026-02-11 21:05:28.169677 caching file sra.gene_sums.SRP009615.G026.gz.</code></pre>
+<pre><code>## 2026-02-12 18:59:46.57072 downloading and reading the counts: 12 samples across 63856 features.</code></pre>
+<pre><code>## 2026-02-12 18:59:46.977153 caching file sra.gene_sums.SRP009615.G026.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/data_sources/sra/gene_sums/15/SRP009615/sra.gene_sums.SRP009615.G026.gz&#39;</code></pre>
-<pre><code>## 2026-02-11 21:05:29.097937 constructing the RangedSummarizedExperiment (rse) object.</code></pre>
+<pre><code>## 2026-02-12 18:59:48.111791 constructing the RangedSummarizedExperiment (rse) object.</code></pre>
 <div class="sourceCode" id="cb89"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb89-1"><a href="datos-de-rna-seq-a-través-de-recount3.html#cb89-1" tabindex="-1"></a><span class="do">## Explora el objeto RSE</span></span>
 <span id="cb89-2"><a href="datos-de-rna-seq-a-través-de-recount3.html#cb89-2" tabindex="-1"></a>rse_gene_SRP009615</span></code></pre></div>
 <pre><code>## class: RangedSummarizedExperiment 
@@ -426,7 +426,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="comunidad-2" class="section level2 hasAnchor" number="4.5">
 <h2><span class="header-section-number">4.5</span> Comunidad<a href="datos-de-rna-seq-a-través-de-recount3.html#comunidad-2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ul>
-<li>Autores de recount2 y 3 en Twitter:
+<li>Autores de recount2 y 3 en redes seociales:
 <ul>
 <li><a href="https://twitter.com/chrisnwilks" class="uri">https://twitter.com/chrisnwilks</a></li>
 <li><a href="https://bsky.app/profile/benlangmead.bsky.social" class="uri">https://bsky.app/profile/benlangmead.bsky.social</a></li>
@@ -435,7 +435,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="https://twitter.com/Shannon_E_Ellis" class="uri">https://twitter.com/Shannon_E_Ellis</a></li>
 <li><a href="https://bsky.app/profile/jtleek.bsky.social" class="uri">https://bsky.app/profile/jtleek.bsky.social</a></li>
 </ul></li>
-<li>Ejemplos de tweets de la comunidad</li>
+<li>Ejemplos de posts de la comunidad</li>
 </ul>
 <p>Un tweet de un alumno del 2021:</p>
 <blockquote class="twitter-tweet">
@@ -453,7 +453,7 @@ I have found a novel exon expressed in a cancer sample. I would like to search T
 — Alicia Oshlack (<span class="citation">@AliciaOshlack</span>) <a href="https://twitter.com/AliciaOshlack/status/1478518895166119937?ref_src=twsrc%5Etfw">January 5, 2022</a>
 </blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<p>Un tweet del curso de 2022:</p>
+<p>Un post del curso de 2022:</p>
 <blockquote class="twitter-tweet">
 <p lang="en" dir="ltr">
 Thinking on this a bit it is strange how few people are doing “medium-sized” meta analyses of transcriptiomics. One on end you have <a href="https://twitter.com/BenLangmead?ref_src=twsrc%5Etfw"><span class="citation">@BenLangmead</span></a> <a href="https://twitter.com/lcolladotor?ref_src=twsrc%5Etfw"><span class="citation">@lcolladotor</span></a> reprocessing (with a touch of analysis) most of SRA. And you see papers pulling an dataset or two to corroborate.
