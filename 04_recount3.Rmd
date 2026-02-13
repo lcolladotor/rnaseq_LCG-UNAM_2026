@@ -45,7 +45,7 @@ Primero cargamos el paquete de R que automáticamente carga todas las dependenci
 library("recount3")
 ```
 
-Después tenemos que identificar un estudio de interes y determinar si queremos accesar la información a nivel de genes, exones, etc. Sabiendo el estudio de interes, podemos descargar los datos usando la función `create_rse()` como mostramos a continuación. `create_rse()` tiene argumentos con los cuales podemos especificar la **anotación** que queremos usar (las opciones dependen del organismo).
+Después tenemos que identificar un estudio de interés y determinar si queremos acceder a la información a nivel de genes, exones, etc. Sabiendo el estudio de interés, podemos descargar los datos usando la función `create_rse()` como mostramos a continuación. `create_rse()` tiene argumentos con los cuales podemos especificar la **anotación** que queremos usar (las opciones dependen del organismo).
 
 
 ```{r 'quick_example'}
@@ -82,7 +82,7 @@ Una vez que tenemos las cuentas, podemos usar `transform_counts()` o `compute_re
 
 
 ```{r "tranform_counts"}
-## Convirtamos las cuentas por nucleotido a cuentas por lectura
+## Convirtamos las cuentas por nucleótido a cuentas por lectura
 ## usando compute_read_counts().
 ## Para otras transformaciones como RPKM y TPM, revisa transform_counts().
 assay(rse_gene_SRP009615, "counts") <- compute_read_counts(rse_gene_SRP009615)
@@ -113,13 +113,13 @@ Ahora estamos listos para usar otras herramientas para el análisis de los datos
     - Utiliza información de las columnas para el eje X
     - Utiliza información de las columnas para los colores
 * (opcional) Crea tu cuenta gratis de <https://www.shinyapps.io/> y comparte tu visualización de los datos usando `iSEE` de esa forma.
-  - OJO: Necesitaras una cuenta pagada para poder tener acceso a computadoras con suficiente memoria para los datos que tenemos. O usa un set de datos más pequeño.
+  - OJO: Necesitarás una cuenta pagada para poder tener acceso a computadoras con suficiente memoria para los datos que tenemos. O usa un set de datos más pequeño.
   - Ejemplos reales: <https://github.com/LieberInstitute/10xPilot_snRNAseq-human#explore-the-data-interactively>.
   - Ejemplo: <https://libd.shinyapps.io/SRP009615/> creado con <https://github.com/lcolladotor/rnaseq_2023_notas_en_vivo/blob/main/app.R>.
 
 ## Comunidad
 
-* Autores de recount2 y 3 en redes seociales:
+* Autores de recount2 y 3 en redes sociales:
     - https://twitter.com/chrisnwilks
     - <https://bsky.app/profile/benlangmead.bsky.social>
     - <https://bsky.app/profile/kasperdhansen.bsky.social>
