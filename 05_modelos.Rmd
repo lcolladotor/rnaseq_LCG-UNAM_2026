@@ -1,7 +1,7 @@
 # Modelos estadísticos
 
 * Revisión de regresión lineal <https://lcolladotor.github.io/bioc_team_ds/helping-others.html#linear-regression-example>
-* Con R, usamos mucho la función `model.matrix()` y la sintáxis de fórmula `Y ~ X1 + X2` tal como en el siguiente ejemplo.
+* Con R, usamos mucho la función `model.matrix()` y la sintaxis de fórmula `Y ~ X1 + X2` tal como en el siguiente ejemplo.
 
 ```{r model.matrix}
 ## ?model.matrix
@@ -18,7 +18,7 @@ summary(lm(log(Volume) ~ log(Height) + log(Girth), data = trees))
 
 ## ExploreModelMatrix
 
-* Es un paquete de Bioconductor que nos ayuda a entender los modelos estadísticos que estamos usando gracias a visualizaciones <http://www.bioconductor.org/packages/ExploreModelMatrix/> que está descrito en el siguiente artículo
+* Es un paquete de Bioconductor que nos ayuda a entender los modelos estadísticos que estamos usando gracias a visualizaciones <http://www.bioconductor.org/packages/ExploreModelMatrix/> que está descrito en el siguiente artículo.
 * Revisaremos los ejemplos en http://www.bioconductor.org/packages/release/bioc/vignettes/ExploreModelMatrix/inst/doc/ExploreModelMatrix.html
 
 
@@ -31,7 +31,7 @@ summary(lm(log(Volume) ~ log(Height) + log(Girth), data = trees))
     treatment = rep(c("ctrl", "trt"), 4)
 ))
 
-## Creemos las imágenes usando ExploreModelMatrix
+## Generemos las imágenes usando ExploreModelMatrix
 vd <- ExploreModelMatrix::VisualizeDesign(
     sampleData = sampleData,
     designFormula = ~ genotype + treatment,
@@ -45,7 +45,7 @@ cowplot::plot_grid(plotlist = vd$plotlist)
 De forma interactiva podemos correr el siguiente código:
 
 ```{r EMM_example1_interactive, eval = FALSE}
-## Usaremos shiny otra ves
+## Usaremos shiny otra vez
 app <- ExploreModelMatrix(
     sampleData = sampleData,
     designFormula = ~ genotype + treatment
@@ -108,7 +108,7 @@ rse_gene_SRP045638$sra.sample_attributes <- gsub("dev_stage;;Fetal\\|", "", rse_
 rse_gene_SRP045638$sra.sample_attributes[1:3]
 ```
 
-Ahora si podemos continuar con el mismo código de ayer.
+Ahora sí podemos continuar con el mismo código de ayer.
 
 ```{r attributes}
 rse_gene_SRP045638 <- expand_sra_attributes(rse_gene_SRP045638)
@@ -119,7 +119,7 @@ colData(rse_gene_SRP045638)[
 ]
 ```
 
-Como ahora si vamos a usar esta información para un modelo estadístico, será importante que tengamos en el formato correcto de R a la información que vamos a usar.
+Dado que vamos a usar esta información para un modelo estadístico, será importante que la información esté en el formato correcto de R.
 
 ```{r re_cast}
 ## Pasar de character a numeric o factor
@@ -140,7 +140,7 @@ summary(as.data.frame(colData(rse_gene_SRP045638)[
 Ahora crearemos un par de variables para que las podamos usar en nuestro análisis.
 
 ```{r new_variables}
-## Encontraremos diferencias entre muestra prenatalas vs postnatales
+## Encontraremos diferencias entre muestra prenatales vs postnatales
 rse_gene_SRP045638$prenatal <- factor(ifelse(rse_gene_SRP045638$sra_attribute.age < 0, "prenatal", "postnatal"))
 table(rse_gene_SRP045638$prenatal)
 
@@ -160,7 +160,7 @@ A continuación podemos eliminar algunas muestras que consideremos de baja calid
 ## Guardemos nuestro objeto entero por si luego cambiamos de opinión
 rse_gene_SRP045638_unfiltered <- rse_gene_SRP045638
 
-## Eliminemos a muestras malas
+## Eliminemos las muestras de mala calidad
 hist(rse_gene_SRP045638$assigned_gene_prop)
 table(rse_gene_SRP045638$assigned_gene_prop < 0.3)
 rse_gene_SRP045638 <- rse_gene_SRP045638[, rse_gene_SRP045638$assigned_gene_prop > 0.3]
@@ -169,7 +169,7 @@ rse_gene_SRP045638 <- rse_gene_SRP045638[, rse_gene_SRP045638$assigned_gene_prop
 ## muestras.
 ## Ojo: en un análisis real probablemente haríamos esto con los RPKMs o CPMs
 ## en vez de las cuentas.
-## En realidad usariamos:
+## En realidad usaríamos:
 # edgeR::filterByExpr() https://bioconductor.org/packages/edgeR/ https://rdrr.io/bioc/edgeR/man/filterByExpr.html
 # genefilter::genefilter() https://bioconductor.org/packages/genefilter/ https://rdrr.io/bioc/genefilter/man/genefilter.html
 # jaffelab::expression_cutoff() http://research.libd.org/jaffelab/reference/expression_cutoff.html
@@ -191,7 +191,7 @@ Ahora ya estamos listos para continuar con el análisis de expresión diferencia
 
 ## Normalización de datos
 
-* Lean _A hypothetical scenario_ en uno de los artículos sobre `edgeR` <https://genomebiology.biomedcentral.com/articles/10.1186/gb-2010-11-3-r25#Sec2> para entender un poco sobre el concepto de _composition bias_.
+* Lean _A hypothetical scenario_ es uno de los artículos sobre `edgeR` <https://genomebiology.biomedcentral.com/articles/10.1186/gb-2010-11-3-r25#Sec2> para entender un poco sobre el concepto de _composition bias_.
 * Sigue siendo relevante con datos de scRNA-seq como pueden ver en <https://bioconductor.org/books/3.20/OSCA.multisample/multi-sample-comparisons.html#performing-the-de-analysi>. Ahí descubren una serie de pasos para usar métodos desarrollados para bulk RNA-seq y como se pueden usar en scRNA-seq.
 
 
@@ -248,7 +248,7 @@ de_results <- topTable(
 dim(de_results)
 head(de_results)
 
-## Genes diferencialmente expresados entre pre y post natal con FDR < 5%
+## Genes diferencialmente expresados entre prenatal y postnatal con FDR < 5%
 table(de_results$adj.P.Val < 0.05)
 
 ## Visualicemos los resultados estadísticos
@@ -288,13 +288,13 @@ pheatmap(
 )
 ```
 
-Los resultados que tenemos no son tan sorprendentes porque hay una diferencia enorme en los perfiles de expresión en el DLPFC entre muestra pre y post-natales. Eso lo podemos ver con MDS (multidimensional scaling) tal como describen en [este workflow](http://bioconductor.org/packages/release/workflows/vignettes/RNAseq123/inst/doc/limmaWorkflow.html#unsupervised-clustering-of-samples).
+Los resultados que tenemos no son tan sorprendentes porque hay una diferencia enorme en los perfiles de expresión en el DLPFC entre muestras prenatales y postnatales. Eso lo podemos ver con MDS (multidimensional scaling) tal como describen en [este workflow](http://bioconductor.org/packages/release/workflows/vignettes/RNAseq123/inst/doc/limmaWorkflow.html#unsupervised-clustering-of-samples).
 
 ```{r plot_mds}
 ## Para colores
 library("RColorBrewer")
 
-## Conviertiendo los grupos de edad a colores
+## Convirtiendo los grupos de edad a colores
 col.group <- df$AgeGroup
 levels(col.group) <- brewer.pal(nlevels(col.group), "Set1")
 col.group <- as.character(col.group)
@@ -302,7 +302,7 @@ col.group <- as.character(col.group)
 ## MDS por grupos de edad
 plotMDS(vGene$E, labels = df$AgeGroup, col = col.group)
 
-## Conviertiendo los valores de Sex a colores
+## Convirtiendo los valores de Sex a colores
 col.sex <- df$Sex
 levels(col.sex) <- brewer.pal(nlevels(col.sex), "Dark2")
 col.sex <- as.character(col.sex)
@@ -313,7 +313,7 @@ plotMDS(vGene$E, labels = df$Sex, col = col.sex)
 
 ## Ejercicio
 
-Agreguen los nombres de los genes a nuestro `pheatmap`. 
+Agreguen los nombres de los genes al `pheatmap`. 
 
 Pistas:
 
@@ -346,7 +346,7 @@ Algunxs de lxs autores de `edgeR` y `limma`:
 ## Tenemos que usar gene_id y gene_name
 rowRanges(rse_gene_SRP045638)
 
-## Alternativamente, podriamos haber usado de_results
+## Alternativamente, podríamos haber usado de_results
 head(de_results, n = 3)
 
 ## Es la misma información
@@ -361,7 +361,7 @@ rownames(exprs_heatmap) <- rowRanges(rse_gene_SRP045638)$gene_name[
     match(rownames(exprs_heatmap), rowRanges(rse_gene_SRP045638)$gene_id)
 ]
 
-## Vean que tambien podriamos haber usado rank()
+## Vean que también podríamos haber usado rank()
 identical(
     which(rank(de_results$adj.P.Val) <= 50),
     match(nombres_originales, rowRanges(rse_gene_SRP045638)$gene_id)
@@ -429,7 +429,7 @@ ComplexHeatmap::pheatmap(
 ```
 
 
-## Específicaciones del proyecto
+## Especificaciones del proyecto
 
 * Con datos de algún estudio disponible vía `recount3`, hagan un análisis de expresión diferencial.
 * Incluyan al menos 3 gráficas en su reporte.
