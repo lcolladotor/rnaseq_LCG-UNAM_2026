@@ -409,32 +409,32 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode" id="cb105"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb105-1"><a href="modelos-estadísticos.html#cb105-1" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&quot;recount3&quot;</span>)</span>
 <span id="cb105-2"><a href="modelos-estadísticos.html#cb105-2" tabindex="-1"></a></span>
 <span id="cb105-3"><a href="modelos-estadísticos.html#cb105-3" tabindex="-1"></a>human_projects <span class="ot">&lt;-</span> <span class="fu">available_projects</span>()</span></code></pre></div>
-<pre><code>## 2026-02-13 14:53:11.527617 caching file sra.recount_project.MD.gz.</code></pre>
-<pre><code>## 2026-02-13 14:53:11.80949 caching file gtex.recount_project.MD.gz.</code></pre>
-<pre><code>## 2026-02-13 14:53:12.104368 caching file tcga.recount_project.MD.gz.</code></pre>
+<pre><code>## 2026-02-13 16:13:40.716841 caching file sra.recount_project.MD.gz.</code></pre>
+<pre><code>## 2026-02-13 16:13:41.050688 caching file gtex.recount_project.MD.gz.</code></pre>
+<pre><code>## 2026-02-13 16:13:41.368339 caching file tcga.recount_project.MD.gz.</code></pre>
 <div class="sourceCode" id="cb109"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb109-1"><a href="modelos-estadísticos.html#cb109-1" tabindex="-1"></a>rse_gene_SRP045638 <span class="ot">&lt;-</span> <span class="fu">create_rse</span>(</span>
 <span id="cb109-2"><a href="modelos-estadísticos.html#cb109-2" tabindex="-1"></a>    <span class="fu">subset</span>(</span>
 <span id="cb109-3"><a href="modelos-estadísticos.html#cb109-3" tabindex="-1"></a>        human_projects,</span>
 <span id="cb109-4"><a href="modelos-estadísticos.html#cb109-4" tabindex="-1"></a>        project <span class="sc">==</span> <span class="st">&quot;SRP045638&quot;</span> <span class="sc">&amp;</span> project_type <span class="sc">==</span> <span class="st">&quot;data_sources&quot;</span></span>
 <span id="cb109-5"><a href="modelos-estadísticos.html#cb109-5" tabindex="-1"></a>    )</span>
 <span id="cb109-6"><a href="modelos-estadísticos.html#cb109-6" tabindex="-1"></a>)</span></code></pre></div>
-<pre><code>## 2026-02-13 14:53:14.688597 downloading and reading the metadata.</code></pre>
-<pre><code>## 2026-02-13 14:53:14.961846 caching file sra.sra.SRP045638.MD.gz.</code></pre>
+<pre><code>## 2026-02-13 16:13:43.973087 downloading and reading the metadata.</code></pre>
+<pre><code>## 2026-02-13 16:13:44.280488 caching file sra.sra.SRP045638.MD.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/data_sources/sra/metadata/38/SRP045638/sra.sra.SRP045638.MD.gz&#39;</code></pre>
-<pre><code>## 2026-02-13 14:53:15.910047 caching file sra.recount_project.SRP045638.MD.gz.</code></pre>
+<pre><code>## 2026-02-13 16:13:45.324949 caching file sra.recount_project.SRP045638.MD.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/data_sources/sra/metadata/38/SRP045638/sra.recount_project.SRP045638.MD.gz&#39;</code></pre>
-<pre><code>## 2026-02-13 14:53:16.790169 caching file sra.recount_qc.SRP045638.MD.gz.</code></pre>
+<pre><code>## 2026-02-13 16:13:46.402979 caching file sra.recount_qc.SRP045638.MD.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/data_sources/sra/metadata/38/SRP045638/sra.recount_qc.SRP045638.MD.gz&#39;</code></pre>
-<pre><code>## 2026-02-13 14:53:17.706984 caching file sra.recount_seq_qc.SRP045638.MD.gz.</code></pre>
+<pre><code>## 2026-02-13 16:13:47.390638 caching file sra.recount_seq_qc.SRP045638.MD.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/data_sources/sra/metadata/38/SRP045638/sra.recount_seq_qc.SRP045638.MD.gz&#39;</code></pre>
-<pre><code>## 2026-02-13 14:53:18.630823 caching file sra.recount_pred.SRP045638.MD.gz.</code></pre>
+<pre><code>## 2026-02-13 16:13:48.307401 caching file sra.recount_pred.SRP045638.MD.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/data_sources/sra/metadata/38/SRP045638/sra.recount_pred.SRP045638.MD.gz&#39;</code></pre>
-<pre><code>## 2026-02-13 14:53:19.277352 downloading and reading the feature information.</code></pre>
-<pre><code>## 2026-02-13 14:53:19.511009 caching file human.gene_sums.G026.gtf.gz.</code></pre>
-<pre><code>## 2026-02-13 14:53:19.903847 downloading and reading the counts: 66 samples across 63856 features.</code></pre>
-<pre><code>## 2026-02-13 14:53:20.205255 caching file sra.gene_sums.SRP045638.G026.gz.</code></pre>
+<pre><code>## 2026-02-13 16:13:48.981451 downloading and reading the feature information.</code></pre>
+<pre><code>## 2026-02-13 16:13:49.233097 caching file human.gene_sums.G026.gtf.gz.</code></pre>
+<pre><code>## 2026-02-13 16:13:49.629124 downloading and reading the counts: 66 samples across 63856 features.</code></pre>
+<pre><code>## 2026-02-13 16:13:50.014885 caching file sra.gene_sums.SRP045638.G026.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/data_sources/sra/gene_sums/38/SRP045638/sra.gene_sums.SRP045638.G026.gz&#39;</code></pre>
-<pre><code>## 2026-02-13 14:53:21.242277 constructing the RangedSummarizedExperiment (rse) object.</code></pre>
+<pre><code>## 2026-02-13 16:13:51.606021 constructing the RangedSummarizedExperiment (rse) object.</code></pre>
 <div class="sourceCode" id="cb127"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb127-1"><a href="modelos-estadísticos.html#cb127-1" tabindex="-1"></a><span class="fu">assay</span>(rse_gene_SRP045638, <span class="st">&quot;counts&quot;</span>) <span class="ot">&lt;-</span> <span class="fu">compute_read_counts</span>(rse_gene_SRP045638)</span></code></pre></div>
 <p>Una vez descargados y con los números de lecturas podemos usar <code>expand_sra_attributes()</code>. Sin embargo, tenemos un problema con estos datos.</p>
 <div class="sourceCode" id="cb128"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb128-1"><a href="modelos-estadísticos.html#cb128-1" tabindex="-1"></a>rse_gene_SRP045638<span class="sc">$</span>sra.sample_attributes[<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>]</span></code></pre></div>
@@ -596,8 +596,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb153-4"><a href="modelos-estadísticos.html#cb153-4" tabindex="-1"></a>    <span class="fu">theme_bw</span>(<span class="at">base_size =</span> <span class="dv">20</span>) <span class="sc">+</span></span>
 <span id="cb153-5"><a href="modelos-estadísticos.html#cb153-5" tabindex="-1"></a>    <span class="fu">ylab</span>(<span class="st">&quot;Assigned Gene Prop&quot;</span>) <span class="sc">+</span></span>
 <span id="cb153-6"><a href="modelos-estadísticos.html#cb153-6" tabindex="-1"></a>    <span class="fu">xlab</span>(<span class="st">&quot;Age Group&quot;</span>)</span></code></pre></div>
-<p><img src="_main_files/figure-html/explore_gene_prop_by_age-1.png" alt="" width="672" />
-Por ejemplo, usando el paquete de <a href="https://bioconductor.org/packages/variancePartition"><code>variancePartition</code></a> y <a href="https://bioconductor.org/packages/scater"><code>scater</code></a> entre otros tal como exploramos en el siguiente video del club de R de LIBD (<em><a href="https://docs.google.com/document/d/1hil3zwPN6BW6HlwldLbM1FdlLIBWKFNXRUqJJEK_-eY/edit">notes in English</a></em>)/</p>
+<p><img src="_main_files/figure-html/explore_gene_prop_by_age-1.png" alt="" width="672" /></p>
+<p>Por ejemplo, usando el paquete de <a href="https://bioconductor.org/packages/variancePartition"><code>variancePartition</code></a> y <a href="https://bioconductor.org/packages/scater"><code>scater</code></a> entre otros tal como exploramos en el siguiente video del club de R de LIBD (<em><a href="https://docs.google.com/document/d/1hil3zwPN6BW6HlwldLbM1FdlLIBWKFNXRUqJJEK_-eY/edit">notes in English</a></em>).</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/OdNU5LUOHng" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
 <p>Por ahora continuaremos con el siguiente modelo estadístico.</p>
