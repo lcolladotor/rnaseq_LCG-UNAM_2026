@@ -216,7 +216,8 @@ ggplot(as.data.frame(colData(rse_gene_SRP045638)), aes(y = assigned_gene_prop, x
     ylab("Assigned Gene Prop") +
     xlab("Age Group")
 ```
-Por ejemplo, usando el paquete de [`variancePartition`](https://bioconductor.org/packages/variancePartition) y [`scater`](https://bioconductor.org/packages/scater) entre otros tal como exploramos en el siguiente video del club de R de LIBD (_[notes in English](https://docs.google.com/document/d/1hil3zwPN6BW6HlwldLbM1FdlLIBWKFNXRUqJJEK_-eY/edit)_)/
+
+Por ejemplo, usando el paquete de [`variancePartition`](https://bioconductor.org/packages/variancePartition) y [`scater`](https://bioconductor.org/packages/scater) entre otros tal como exploramos en el siguiente video del club de R de LIBD (_[notes in English](https://docs.google.com/document/d/1hil3zwPN6BW6HlwldLbM1FdlLIBWKFNXRUqJJEK_-eY/edit)_).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/OdNU5LUOHng" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
