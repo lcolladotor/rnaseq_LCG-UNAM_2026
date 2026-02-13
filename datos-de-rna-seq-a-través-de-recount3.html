@@ -233,7 +233,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="5.7" data-path="modelos-estadísticos.html"><a href="modelos-estadísticos.html#comunidad-3"><i class="fa fa-check"></i><b>5.7</b> Comunidad</a></li>
 <li class="chapter" data-level="5.8" data-path="modelos-estadísticos.html"><a href="modelos-estadísticos.html#ejercicio-respuesta"><i class="fa fa-check"></i><b>5.8</b> Ejercicio: respuesta</a></li>
 <li class="chapter" data-level="5.9" data-path="modelos-estadísticos.html"><a href="modelos-estadísticos.html#sobre-centering-y-scaling-en-heatmaps"><i class="fa fa-check"></i><b>5.9</b> Sobre <em>centering</em> y <em>scaling</em> en heatmaps</a></li>
-<li class="chapter" data-level="5.10" data-path="modelos-estadísticos.html"><a href="modelos-estadísticos.html#espec%C3%ADficaciones-del-proyecto"><i class="fa fa-check"></i><b>5.10</b> Específicaciones del proyecto</a></li>
+<li class="chapter" data-level="5.10" data-path="modelos-estadísticos.html"><a href="modelos-estadísticos.html#especificaciones-del-proyecto"><i class="fa fa-check"></i><b>5.10</b> Especificaciones del proyecto</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="plática-de-maria-gutiérrez-arcelus.html"><a href="plática-de-maria-gutiérrez-arcelus.html"><i class="fa fa-check"></i><b>6</b> Plática de Maria Gutiérrez-Arcelus</a></li>
 <li class="chapter" data-level="7" data-path="rna-seq-en-el-mundo-real-y-casi-todo-lo-que-puede-salir-mal.html"><a href="rna-seq-en-el-mundo-real-y-casi-todo-lo-que-puede-salir-mal.html"><i class="fa fa-check"></i><b>7</b> RNA-seq en el mundo real y (casi) todo lo que puede salir mal</a></li>
@@ -322,11 +322,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Después tenemos que identificar un estudio de interés y determinar si queremos acceder a la información a nivel de genes, exones, etc. Sabiendo el estudio de interés, podemos descargar los datos usando la función <code>create_rse()</code> como mostramos a continuación. <code>create_rse()</code> tiene argumentos con los cuales podemos especificar la <strong>anotación</strong> que queremos usar (las opciones dependen del organismo).</p>
 <div class="sourceCode" id="cb63"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb63-1"><a href="datos-de-rna-seq-a-través-de-recount3.html#cb63-1" tabindex="-1"></a><span class="do">## Revisemos todos los proyectos con datos de humano en recount3</span></span>
 <span id="cb63-2"><a href="datos-de-rna-seq-a-través-de-recount3.html#cb63-2" tabindex="-1"></a>human_projects <span class="ot">&lt;-</span> <span class="fu">available_projects</span>()</span></code></pre></div>
-<pre><code>## 2026-02-13 14:49:34.628025 caching file sra.recount_project.MD.gz.</code></pre>
+<pre><code>## 2026-02-13 14:52:56.933136 caching file sra.recount_project.MD.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/data_sources/sra/metadata/sra.recount_project.MD.gz&#39;</code></pre>
-<pre><code>## 2026-02-13 14:49:35.741074 caching file gtex.recount_project.MD.gz.</code></pre>
+<pre><code>## 2026-02-13 14:52:58.006351 caching file gtex.recount_project.MD.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/data_sources/gtex/metadata/gtex.recount_project.MD.gz&#39;</code></pre>
-<pre><code>## 2026-02-13 14:49:36.658068 caching file tcga.recount_project.MD.gz.</code></pre>
+<pre><code>## 2026-02-13 14:52:58.859819 caching file tcga.recount_project.MD.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/data_sources/tcga/metadata/tcga.recount_project.MD.gz&#39;</code></pre>
 <div class="sourceCode" id="cb70"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb70-1"><a href="datos-de-rna-seq-a-través-de-recount3.html#cb70-1" tabindex="-1"></a><span class="do">## Encuentra tu proyecto de interés. Aquí usaremos</span></span>
 <span id="cb70-2"><a href="datos-de-rna-seq-a-través-de-recount3.html#cb70-2" tabindex="-1"></a><span class="do">## SRP009615 de ejemplo</span></span>
@@ -337,24 +337,24 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb70-7"><a href="datos-de-rna-seq-a-través-de-recount3.html#cb70-7" tabindex="-1"></a><span class="do">## Crea un objeto de tipo RangedSummarizedExperiment (RSE)</span></span>
 <span id="cb70-8"><a href="datos-de-rna-seq-a-través-de-recount3.html#cb70-8" tabindex="-1"></a><span class="do">## con la información a nivel de genes</span></span>
 <span id="cb70-9"><a href="datos-de-rna-seq-a-través-de-recount3.html#cb70-9" tabindex="-1"></a>rse_gene_SRP009615 <span class="ot">&lt;-</span> <span class="fu">create_rse</span>(proj_info)</span></code></pre></div>
-<pre><code>## 2026-02-13 14:49:42.039808 downloading and reading the metadata.</code></pre>
-<pre><code>## 2026-02-13 14:49:42.305276 caching file sra.sra.SRP009615.MD.gz.</code></pre>
+<pre><code>## 2026-02-13 14:53:03.921802 downloading and reading the metadata.</code></pre>
+<pre><code>## 2026-02-13 14:53:04.186246 caching file sra.sra.SRP009615.MD.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/data_sources/sra/metadata/15/SRP009615/sra.sra.SRP009615.MD.gz&#39;</code></pre>
-<pre><code>## 2026-02-13 14:49:43.210728 caching file sra.recount_project.SRP009615.MD.gz.</code></pre>
+<pre><code>## 2026-02-13 14:53:05.064434 caching file sra.recount_project.SRP009615.MD.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/data_sources/sra/metadata/15/SRP009615/sra.recount_project.SRP009615.MD.gz&#39;</code></pre>
-<pre><code>## 2026-02-13 14:49:44.136817 caching file sra.recount_qc.SRP009615.MD.gz.</code></pre>
+<pre><code>## 2026-02-13 14:53:05.924454 caching file sra.recount_qc.SRP009615.MD.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/data_sources/sra/metadata/15/SRP009615/sra.recount_qc.SRP009615.MD.gz&#39;</code></pre>
-<pre><code>## 2026-02-13 14:49:45.126689 caching file sra.recount_seq_qc.SRP009615.MD.gz.</code></pre>
+<pre><code>## 2026-02-13 14:53:06.835003 caching file sra.recount_seq_qc.SRP009615.MD.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/data_sources/sra/metadata/15/SRP009615/sra.recount_seq_qc.SRP009615.MD.gz&#39;</code></pre>
-<pre><code>## 2026-02-13 14:49:46.05311 caching file sra.recount_pred.SRP009615.MD.gz.</code></pre>
+<pre><code>## 2026-02-13 14:53:07.696588 caching file sra.recount_pred.SRP009615.MD.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/data_sources/sra/metadata/15/SRP009615/sra.recount_pred.SRP009615.MD.gz&#39;</code></pre>
-<pre><code>## 2026-02-13 14:49:46.683377 downloading and reading the feature information.</code></pre>
-<pre><code>## 2026-02-13 14:49:46.923166 caching file human.gene_sums.G026.gtf.gz.</code></pre>
+<pre><code>## 2026-02-13 14:53:08.289713 downloading and reading the feature information.</code></pre>
+<pre><code>## 2026-02-13 14:53:08.538334 caching file human.gene_sums.G026.gtf.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/annotations/gene_sums/human.gene_sums.G026.gtf.gz&#39;</code></pre>
-<pre><code>## 2026-02-13 14:49:47.970501 downloading and reading the counts: 12 samples across 63856 features.</code></pre>
-<pre><code>## 2026-02-13 14:49:48.236761 caching file sra.gene_sums.SRP009615.G026.gz.</code></pre>
+<pre><code>## 2026-02-13 14:53:09.484252 downloading and reading the counts: 12 samples across 63856 features.</code></pre>
+<pre><code>## 2026-02-13 14:53:09.740848 caching file sra.gene_sums.SRP009615.G026.gz.</code></pre>
 <pre><code>## adding rname &#39;http://duffel.rail.bio/recount3/human/data_sources/sra/gene_sums/15/SRP009615/sra.gene_sums.SRP009615.G026.gz&#39;</code></pre>
-<pre><code>## 2026-02-13 14:49:49.090571 constructing the RangedSummarizedExperiment (rse) object.</code></pre>
+<pre><code>## 2026-02-13 14:53:10.491225 constructing the RangedSummarizedExperiment (rse) object.</code></pre>
 <div class="sourceCode" id="cb89"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb89-1"><a href="datos-de-rna-seq-a-través-de-recount3.html#cb89-1" tabindex="-1"></a><span class="do">## Explora el objeto RSE</span></span>
 <span id="cb89-2"><a href="datos-de-rna-seq-a-través-de-recount3.html#cb89-2" tabindex="-1"></a>rse_gene_SRP009615</span></code></pre></div>
 <pre><code>## class: RangedSummarizedExperiment 

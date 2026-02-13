@@ -52,7 +52,7 @@ ejercicio-3
 comunidad-3
 ejercicio-respuesta
 sobre-centering-y-scaling-en-heatmaps
-específicaciones-del-proyecto
+especificaciones-del-proyecto
 plática-de-maria-gutiérrez-arcelus
 rna-seq-en-el-mundo-real-y-casi-todo-lo-que-puede-salir-mal
 análisis-de-snrna-seq
